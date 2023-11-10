@@ -72,3 +72,23 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Rider-specific files
+.idea/
+
+# Rider user-specific files
+*.sln.iml
+
+# Rider generated files
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+
+# Rider's .NET Core
+.project
+*.csproj
+*.sln.DotSettings
+*.csproj.DotSettings
+*.sln.DotSettings.user
+*.csproj.DotSettings.user
