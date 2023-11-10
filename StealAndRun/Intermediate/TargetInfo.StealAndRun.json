@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "StealAndRun",
+			"Path": "..\\Source\\StealAndRun.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "StealAndRunEditor",
+			"Path": "..\\Source\\StealAndRunEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
