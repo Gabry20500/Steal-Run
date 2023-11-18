@@ -11,7 +11,10 @@
     <None Include="..\..\Source\StealAndRunEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <None Include="..\..\.vsconfig" />
+    <None Include="..\..\CIAO AMICI.txt" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -38,6 +41,30 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\StealAndRun\StealAndRun.h">
       <Filter>Source\StealAndRun</Filter>
+    </ClInclude>
+    <Filter Include="Source\StealAndRun\Private">
+      <UniqueIdentifier>{17F28E7E-7453-33AA-92D8-0ABAE0F1B9B6}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\StealAndRun\Private\InLevelGameMode.cpp">
+      <Filter>Source\StealAndRun\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\StealAndRun\Private\InLevelPlayerController.cpp">
+      <Filter>Source\StealAndRun\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\StealAndRun\Private\PlayerPawn.cpp">
+      <Filter>Source\StealAndRun\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\StealAndRun\Public">
+      <UniqueIdentifier>{B2ECFBAA-EECE-347D-BE8E-B83CC7CA7BF6}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\StealAndRun\Public\InLevelGameMode.h">
+      <Filter>Source\StealAndRun\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\StealAndRun\Public\InLevelPlayerController.h">
+      <Filter>Source\StealAndRun\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\StealAndRun\Public\PlayerPawn.h">
+      <Filter>Source\StealAndRun\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
