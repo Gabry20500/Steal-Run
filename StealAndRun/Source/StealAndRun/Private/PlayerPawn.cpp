@@ -17,6 +17,7 @@ APlayerPawn::APlayerPawn()
 	PlayerCollisionComponent->SetLinearDamping(0.2f);
 
 	MoveForce = BaseMoveForce;
+	TargetMoveForce = BaseMoveForce;
 }
 
 // Called to bind functionality to input
@@ -29,27 +30,40 @@ void APlayerPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 
 void APlayerPawn::MoveRight(float AxisValue)
 {
-	if (AxisValue != 0.0f)
-	{
-		FVector Force = FVector(0.0f, AxisValue * MoveForce, 0.0f);
-		PlayerCollisionComponent->AddForce(Force, NAME_None, true);
-	}
-	else 
-	{
-		if(!GetWorld()->GetFirstPlayerController()->IsInputKeyDown(EKeys::LeftShift) || AxisValue == 0.0f)
-			PlayerCollisionComponent->SetPhysicsLinearVelocity(FVector::ZeroVector);
-	}
+	FVector Force = FVector(0.0f, AxisValue * MoveForce, 0.0f);
+	PlayerCollisionComponent->AddForce(Force, NAME_None, true);
 }
 
 void APlayerPawn::OnShiftPressed()
 {
-	MoveForce = BaseMoveForce * ShiftMultiplayer;
-	UE_LOG(LogTemp, Warning, TEXT("%f"), MoveForce);
+	TargetMoveForce = BaseMoveForce * ShiftMultiplayer;
+	bIsShiftPressed = true;
+	UE_LOG(LogTemp, Log, TEXT("%s"), bIsShiftPressed ? TEXT("true") : TEXT("false"));
 }
 
 void APlayerPawn::OnShiftReleased()
 {
-	MoveForce = BaseMoveForce;
-	UE_LOG(LogTemp, Warning, TEXT("%f"), MoveForce);
+	bIsShiftPressed = false;
+	UE_LOG(LogTemp, Log, TEXT("%s"), bIsShiftPressed ? TEXT("true") : TEXT("false"));
+}
+
+void APlayerPawn::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	//FVector Velocity = PlayerCollisionComponent->GetComponentVelocity();
+	//UE_LOG(LogTemp, Log, TEXT("Velocity: %s"), *Velocity.ToString());
+	
+	float CurrentInterpSpeed = bIsShiftPressed ? InterpSpeed : FasterInterpSpeed;
+
+	if (bIsShiftPressed)
+	{
+		MoveForce = FMath::FInterpTo(MoveForce, TargetMoveForce, DeltaTime, CurrentInterpSpeed);
+	}
+	else
+	{
+		MoveForce = FMath::FInterpTo(MoveForce, BaseMoveForce, DeltaTime, CurrentInterpSpeed);
+	}
+	
 }
 

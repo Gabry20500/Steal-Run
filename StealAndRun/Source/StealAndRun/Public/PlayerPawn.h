@@ -41,4 +41,13 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PlayerPawn")
 	float MoveForce;
 	
+	bool bIsShiftPressed = false;
+
+protected:
+	float TargetMoveForce;
+	float InterpSpeed = 5.0f;
+
+	float FasterInterpSpeed = 50.0f;
+
+	virtual void Tick(float DeltaTime) override;
 };
