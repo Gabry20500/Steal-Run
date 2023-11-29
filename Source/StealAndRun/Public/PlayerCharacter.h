@@ -15,25 +15,40 @@ public:
 	// Sets default values for this character's properties
 	APlayerCharacter();
 
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	
+	virtual void Tick(float DeltaTime) override;
 
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
+private:
+	
 	void MoveRight(float Axisvalue);
 	void StartJump();
 	void StopJump();
 	void StartRun();
 	void StopRun();
+	void StartSlide();
+	void StopSlide();
+	bool InputReceived();
 
-
-
-private:
-	
-	bool bPressedJump;
+	//Run Variables
+	float BaseWalkSpeed;
 	bool bisRunning;
+	float Multi;
+
+	//Jump Variables
+	bool bPressedJump;
+
 	
-	UPROPERTY(EditAnywhere, Category = "Player Movement")
-	float multi;
+	bool bIsSliding;
+	float SlideTime;
+	float SlideSpeedMultiplier;
+	float SlideDuration;
+
+	FTimerHandle SlideTimerHandle;
+	
+
 };
