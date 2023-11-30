@@ -1,8 +1,0 @@
-{
-	"SourceFiles": [
-		"C:\\Unreal Project\\Steal-Run\\StealAndRun\\Source\\StealAndRun\\StealAndRun.Build.cs",
-		"C:\\Unreal Project\\Steal-Run\\StealAndRun\\Source\\StealAndRun.Target.cs",
-		"C:\\Unreal Project\\Steal-Run\\StealAndRun\\Source\\StealAndRunEditor.Target.cs"
-	],
-	"EngineVersion": "5.3.1"
-}
