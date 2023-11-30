@@ -30,25 +30,20 @@ private:
 	void StopJump();
 	void StartRun();
 	void StopRun();
-	void StartSlide();
-	void StopSlide();
 	bool InputReceived();
 
 	//Run Variables
 	float BaseWalkSpeed;
 	bool bisRunning;
 	float Multi;
-
-	//Jump Variables
-	bool bPressedJump;
+	float SlideTime;
 
 	
-	bool bIsSliding;
-	float SlideTime;
-	float SlideSpeedMultiplier;
-	float SlideDuration;
-
-	FTimerHandle SlideTimerHandle;
+	//Jump Variables
+	bool bPressedJump;
+	
+	//Deceleration Variables
+	FTimerHandle DecelerationTimerHandle;
 	
 
 };
