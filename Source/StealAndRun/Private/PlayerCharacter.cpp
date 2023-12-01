@@ -9,7 +9,7 @@ APlayerCharacter::APlayerCharacter()
 
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 	GetCharacterMovement()->JumpZVelocity = 600.f;
-	GetCharacterMovement()->AirControl = 1.0f;
+	GetCharacterMovement()->AirControl = 0.2f;
 
 	Multi = 2.0f;
 	SlideTime = 1.0f;
@@ -29,32 +29,15 @@ void APlayerCharacter::BeginPlay()
 }
 
 
-// void APlayerCharacter::Tick(float DeltaTime)
-// {
-// 	Super::Tick(DeltaTime);
-//
-// 	if(!bisRunning || !InputReceived() && GetCharacterMovement()->IsMovingOnGround() && GetCharacterMovement()->Velocity.SizeSquared() > 0.1f)
-// 	{
-// 		if(GetCharacterMovement()->MaxWalkSpeed > BaseWalkSpeed)
-// 		{
-// 			GetCharacterMovement()->Velocity *= 0.8f;
-// 		}
-// 	}
-// }
-
 void APlayerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	// Controllo del cambio di direzione a mezz'aria
-	if (!GetCharacterMovement()->IsFalling())
+	if(!bisRunning || !InputReceived() && GetCharacterMovement()->IsMovingOnGround() && GetCharacterMovement()->Velocity.SizeSquared() > 0.1f)
 	{
-		// Controllo dell'input per il cambio di direzione
-		float RightValue = InputComponent->GetAxisValue("MoveRight");
-		if (RightValue != 0.0f)
+		if(GetCharacterMovement()->MaxWalkSpeed > BaseWalkSpeed)
 		{
-			FVector Direction = GetActorRightVector() * RightValue;
-			AddMovementInput(Direction);
+			GetCharacterMovement()->Velocity *= 0.8f;
 		}
 	}
 }
