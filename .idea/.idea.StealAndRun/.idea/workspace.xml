@@ -10,44 +10,110 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bfdb38b-af76-4bdc-90c5-264a1bf7fbfc" name="Changes" comment="" />
+    <list default="true" id="6d0f64fc-5f0b-443a-ad61-773d9a582631" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Binaries/Win64/StealAndRunEditor.target" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/StealAndRunEditor.target" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-StealAndRun.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-StealAndRun.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CIAO AMICI.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Player/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/BP_PlayerCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestMap/8/RI/FH2H6O4OVPGJIFA258JAMZ.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestMap/8/RI/FH2H6O4OVPGJIFA258JAMZ.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/BuildRules/StealAndRunModuleRules.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/BuildRules/StealAndRunModuleRules.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/BuildRules/StealAndRunModuleRulesManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/BuildRules/StealAndRunModuleRulesManifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/BuildRulesProjects/StealAndRunModuleRules/obj/Development/StealAndRunModuleRules.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/BuildRulesProjects/StealAndRunModuleRules/obj/Development/StealAndRunModuleRules.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/BuildRulesProjects/StealAndRunModuleRules/obj/Development/StealAndRunModuleRules.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/BuildRulesProjects/StealAndRunModuleRules/obj/Development/StealAndRunModuleRules.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/BuildRulesProjects/StealAndRunModuleRules/obj/Development/StealAndRunModuleRules.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/BuildRulesProjects/StealAndRunModuleRules/obj/Development/StealAndRunModuleRules.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/BuildRulesProjects/StealAndRunModuleRules/obj/StealAndRunModuleRules.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/BuildRulesProjects/StealAndRunModuleRules/obj/StealAndRunModuleRules.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/BuildRulesProjects/StealAndRunModuleRules/obj/StealAndRunModuleRules.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/BuildRulesProjects/StealAndRunModuleRules/obj/StealAndRunModuleRules.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/BuildRulesProjects/StealAndRunModuleRules/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/BuildRulesProjects/StealAndRunModuleRules/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/BuildRulesProjects/StealAndRunModuleRules/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/BuildRulesProjects/StealAndRunModuleRules/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/BuildRulesProjects/StealAndRunModuleRules/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/BuildRulesProjects/StealAndRunModuleRules/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/BuildRulesProjects/StealAndRunModuleRules/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/BuildRulesProjects/StealAndRunModuleRules/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/StealAndRunEditor/Development/StealAndRunEditor.uhtmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/StealAndRunEditor/Development/StealAndRunEditor.uhtmanifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/StealAndRunEditor/Development/StealAndRunEditor.uhtpath" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/StealAndRunEditor/Development/StealAndRunEditor.uhtpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Core/SharedPCH.Core.Cpp17.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Core/SharedPCH.Core.Cpp17.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Core/SharedPCH.Core.Cpp17.h" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Core/SharedPCH.Core.Cpp17.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Core/SharedPCH.Core.Cpp17.h.obj.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Core/SharedPCH.Core.Cpp17.h.obj.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Core/SharedPCH.Core.Cpp20.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Core/SharedPCH.Core.Cpp20.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Core/SharedPCH.Core.Cpp20.h" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Core/SharedPCH.Core.Cpp20.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Core/SharedPCH.Core.Cpp20.h.obj.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Core/SharedPCH.Core.Cpp20.h.obj.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Core/SharedPCH.Core.RTTI.Cpp20.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Core/SharedPCH.Core.RTTI.Cpp20.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Core/SharedPCH.Core.RTTI.Cpp20.h" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Core/SharedPCH.Core.RTTI.Cpp20.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Core/SharedPCH.Core.RTTI.Cpp20.h.obj.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Core/SharedPCH.Core.RTTI.Cpp20.h.obj.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/CoreUObject/SharedPCH.CoreUObject.Cpp20.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/CoreUObject/SharedPCH.CoreUObject.Cpp20.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/CoreUObject/SharedPCH.CoreUObject.Cpp20.h" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/CoreUObject/SharedPCH.CoreUObject.Cpp20.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/CoreUObject/SharedPCH.CoreUObject.Cpp20.h.obj.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/CoreUObject/SharedPCH.CoreUObject.Cpp20.h.obj.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/CoreUObject/SharedPCH.CoreUObject.RTTI.Cpp20.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/CoreUObject/SharedPCH.CoreUObject.RTTI.Cpp20.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/CoreUObject/SharedPCH.CoreUObject.RTTI.Cpp20.h" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/CoreUObject/SharedPCH.CoreUObject.RTTI.Cpp20.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/CoreUObject/SharedPCH.CoreUObject.RTTI.Cpp20.h.obj.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/CoreUObject/SharedPCH.CoreUObject.RTTI.Cpp20.h.obj.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Engine/SharedPCH.Engine.Cpp20.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Engine/SharedPCH.Engine.Cpp20.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Engine/SharedPCH.Engine.Cpp20.h" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Engine/SharedPCH.Engine.Cpp20.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Engine/SharedPCH.Engine.Cpp20.h.obj.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Engine/SharedPCH.Engine.Cpp20.h.obj.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Slate/SharedPCH.Slate.Cpp20.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Slate/SharedPCH.Slate.Cpp20.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Slate/SharedPCH.Slate.Cpp20.h" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Slate/SharedPCH.Slate.Cpp20.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Slate/SharedPCH.Slate.Cpp20.h.obj.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/Slate/SharedPCH.Slate.Cpp20.h.obj.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/TargetMetadata.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/TargetMetadata.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/UnrealEd/SharedPCH.UnrealEd.Cpp20.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/UnrealEd/SharedPCH.UnrealEd.Cpp20.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/UnrealEd/SharedPCH.UnrealEd.Cpp20.h" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/UnrealEd/SharedPCH.UnrealEd.Cpp20.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/UnrealEd/SharedPCH.UnrealEd.Cpp20.h.obj.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/UnrealEd/SharedPCH.UnrealEd.Cpp20.h.obj.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/UnrealEd/SharedPCH.UnrealEd.RTTI.Cpp20.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/UnrealEd/SharedPCH.UnrealEd.RTTI.Cpp20.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/UnrealEd/SharedPCH.UnrealEd.RTTI.Cpp20.h" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/UnrealEd/SharedPCH.UnrealEd.RTTI.Cpp20.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/UnrealEd/SharedPCH.UnrealEd.RTTI.Cpp20.h.obj.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/StealAndRunEditor/Development/UnrealEd/SharedPCH.UnrealEd.RTTI.Cpp20.h.obj.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/StealAndRun/Default.rc2.res.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/StealAndRun/Default.rc2.res.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/StealAndRun/Definitions.StealAndRun.h" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/StealAndRun/Definitions.StealAndRun.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/StealAndRun/StealAndRun.Shared.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/StealAndRun/StealAndRun.Shared.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/StealAndRun/StealAndRun.cpp.dep.json" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/StealAndRun/StealAndRun.cpp.dep.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/StealAndRun/StealAndRun.cpp.obj.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/StealAndRun/StealAndRun.cpp.obj.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/StealAndRun/UnrealEditor-StealAndRun.dll.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/StealAndRun/UnrealEditor-StealAndRun.dll.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/StealAndRun/UnrealEditor-StealAndRun.exp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/StealAndRun/UnrealEditor-StealAndRun.exp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/StealAndRun/UnrealEditor-StealAndRun.lib.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/StealAndRun/UnrealEditor-StealAndRun.lib.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/StealAndRun/UnrealEditor-StealAndRun.sup.exp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/x64/UnrealEditor/Development/StealAndRun/UnrealEditor-StealAndRun.sup.exp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/XmlConfigCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/XmlConfigCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry_0.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry_0.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/StealAndRun.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/StealAndRun.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/UE5.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/UE5.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/UE5.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/UE5.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/UECommon.props" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/UECommon.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/AutoScreenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/AutoScreenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Autosaves/PackageRestoreData.json" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Autosaves/PackageRestoreData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Logs/StealAndRun.log" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Logs/StealAndRun.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerPawn.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/PlayerPawn.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Public/PlayerPawn.h" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
+  &quot;associatedIndex&quot;: 6
 }</component>
-  <component name="ProjectId" id="2YqxHhl8JcA24jTp7TJiIA1IPsY" />
+  <component name="ProjectId" id="2XyziIP2BtqhnACu1voCfNcHZQa" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Feature-PlayerMovement&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -175,17 +241,19 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1bfdb38b-af76-4bdc-90c5-264a1bf7fbfc" name="Changes" comment="" />
-      <created>1701266827104</created>
+      <changelist id="6d0f64fc-5f0b-443a-ad61-773d9a582631" name="Changes" comment="" />
+      <created>1699616234133</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1701266827104</updated>
-      <workItem from="1701266828613" duration="6675000" />
-      <workItem from="1701282489770" duration="1451000" />
-      <workItem from="1701335081835" duration="13175000" />
-      <workItem from="1701368815854" duration="620000" />
-      <workItem from="1701371428073" duration="7000" />
-      <workItem from="1701371495767" duration="60000" />
+      <updated>1699616234133</updated>
+      <workItem from="1699616237832" duration="1052000" />
+      <workItem from="1700221667756" duration="25000" />
+      <workItem from="1700221717631" duration="951000" />
+      <workItem from="1700225639740" duration="9188000" />
+      <workItem from="1700300518212" duration="7269000" />
+      <workItem from="1700314666089" duration="4495000" />
+      <workItem from="1700814426071" duration="1380000" />
+      <workItem from="1700824207155" duration="3084000" />
     </task>
     <servers />
   </component>
@@ -193,6 +261,11 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
