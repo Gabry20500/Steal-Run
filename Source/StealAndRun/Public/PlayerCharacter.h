@@ -26,11 +26,20 @@ protected:
 private:
 	
 	void MoveRight(float Axisvalue);
-	void StartJump();
-	void StopJump();
-	void StartRun();
-	void StopRun();
-	bool InputReceived();
+
+	//Jump Variables
+	void OnJumpStart();
+	void OnJumpEnd();
+	
+	UPROPERTY(EditAnywhere, Category = "Jump")
+	float JumpZVelocity = 500.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Jump")
+	float MaxJumpDuration = .5f;
+
+	bool bIsJumping = false;
+	float JumpStartTime = 0.0f;
+	
 
 	//Run Variables
 	float BaseWalkSpeed;
@@ -38,12 +47,7 @@ private:
 	float Multi;
 	float SlideTime;
 
-	
-	//Jump Variables
-	bool bPressedJump;
-	
-	//Deceleration Variables
-	FTimerHandle DecelerationTimerHandle;
-	
-
+	void StartRun();
+	void StopRun();
+	bool InputReceived();
 };
