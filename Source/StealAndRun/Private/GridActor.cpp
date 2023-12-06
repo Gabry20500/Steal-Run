@@ -8,7 +8,6 @@ UGridActor::UGridActor()
 {
 	PrimaryComponentTick.bCanEverTick = true;
 
-	StartLocation = FVector(0.0f, 0.0f, 0.0f);
 	GridSize = FVector(100.0f, 100.0f, 0.0f);
 	NumCellX = 10;
 	NumCellY = 10;
