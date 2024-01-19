@@ -8,12 +8,10 @@ APlayerCharacter::APlayerCharacter()
  	PrimaryActorTick.bCanEverTick = true;
 
 	GetCharacterMovement()->bOrientRotationToMovement = true;
-	//GetCharacterMovement()->JumpZVelocity = 600.f;
 	GetCharacterMovement()->AirControl = 0.2f;
 
 	Multi = 2.0f;
 	SlideTime = 1.0f;
-	bPressedJump = false;
 	bisRunning = false;
 }
 
@@ -32,19 +30,6 @@ void APlayerCharacter::BeginPlay()
 void APlayerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-	if(bIsJumping && GetWorld()->GetTimeSeconds() - JumpStartTime < MaxJumpDuration)
-	{
-		FVector JumpVelocity = FVector(0.0f, 0.0f, JumpZVelocity * DeltaTime);
-		LaunchCharacter(JumpVelocity, false, false);
-	}
-	else
-	{
-		bIsJumping = false;
-	}
-
-
-
 	
 	if(!bisRunning || !InputReceived() && GetCharacterMovement()->IsMovingOnGround() && GetCharacterMovement()->Velocity.SizeSquared() > 0.1f)
 	{
@@ -61,8 +46,6 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 	InputComponent->BindAxis("MoveRight", this, &APlayerCharacter::MoveRight);
-	// InputComponent->BindAction("Jump", IE_Pressed, this, &APlayerCharacter::OnJumpStart);
-	// InputComponent->BindAction("Jump", IE_Released, this, &APlayerCharacter::OnJumpEnd);
 	InputComponent->BindAction("Shift", IE_Pressed, this, &APlayerCharacter::StartRun);
 	InputComponent->BindAction("Shift", IE_Released, this, &APlayerCharacter::StopRun);
 }
@@ -77,14 +60,13 @@ void APlayerCharacter::MoveRight(float Axisvalue)
 
 void APlayerCharacter::OnJumpStart()
 {
-	bIsJumping = true;
-	JumpStartTime = GetWorld()->GetTimeSeconds();
+	
 }
 
 
 void APlayerCharacter::OnJumpEnd()
 {
-	bIsJumping  = false;
+
 }
 
 
