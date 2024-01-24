@@ -13,8 +13,11 @@
     <list default="true" id="6d0f64fc-5f0b-443a-ad61-773d9a582631" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Sprite_Sheet_Enemis/BluePrints/Enemy/BP_enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Sprite_Sheet_Enemis/BluePrints/Enemy/BP_enemy.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Enemies/BaseAnemy/BP_BaseEnemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Enemies/BaseAnemy/BP_BaseEnemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/FirstLevel1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/FirstLevel1.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Player/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/BP_PlayerCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Player/JumpCurve.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/JumpCurve.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +50,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Level-Design&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Feature-PlayerMovementMath&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -199,6 +202,8 @@
       <workItem from="1705594852725" duration="1405000" />
       <workItem from="1705662493590" duration="421000" />
       <workItem from="1705662991701" duration="105000" />
+      <workItem from="1705943582028" duration="140000" />
+      <workItem from="1706116553121" duration="355000" />
     </task>
     <servers />
   </component>
