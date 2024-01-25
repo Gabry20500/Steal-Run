@@ -15,11 +15,8 @@
       <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/FirstLevel1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/FirstLevel1.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Player/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/BP_PlayerCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/SandBox_Level/SandBoxLevel/2/KL/1JZZMRZFAV1Q65SMQTO6OE.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/SandBox_Level/SandBoxLevel/2/KL/1JZZMRZFAV1Q65SMQTO6OE.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/SandBox_Level/SandBoxLevel/5/LZ/0IL7SHHLOO0YTGB9V2KM5X.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/SandBox_Level/SandBoxLevel/5/LZ/0IL7SHHLOO0YTGB9V2KM5X.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/SandBox_Level/SandBoxLevel/A/HJ/FA4FY377USJEPEONAKH782.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/SandBox_Level/SandBoxLevel/A/HJ/FA4FY377USJEPEONAKH782.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/PlayerCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Public/PlayerCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/StealAndRun.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/StealAndRun.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,6 +204,7 @@
       <workItem from="1705943582028" duration="140000" />
       <workItem from="1706116553121" duration="355000" />
       <workItem from="1706178242647" duration="3261000" />
+      <workItem from="1706201819983" duration="6767000" />
     </task>
     <servers />
   </component>
