@@ -53,8 +53,23 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 void APlayerCharacter::MoveRight(float Axisvalue)
 {
-	FVector Direction = FVector(0.0f, -1.0f, 0.0f);
+	FVector Direction = FVector(0.0f, 1.0f, 0.0f);
 	AddMovementInput(Direction, Axisvalue);
+	
+	if(Axisvalue > 0.0f)
+	{
+		PlayerDirection = EPlayerDirection::Right;
+		SetActorRotation(GetActorRotation()+FRotator(0.0f, 0.0f, 180.0f));
+	}
+	else if(Axisvalue < 0.0f)
+	{
+		PlayerDirection = EPlayerDirection::Left;
+		SetActorRotation(GetActorRotation()+FRotator(0.0f, 0.0f, -180.0f));
+	}
+	else
+	{
+		PlayerDirection = EPlayerDirection::None;
+	}
 }
 
 
