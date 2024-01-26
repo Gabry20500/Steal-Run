@@ -10,14 +10,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d0f64fc-5f0b-443a-ad61-773d9a582631" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/FirstLevel1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/FirstLevel1.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Player/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/BP_PlayerCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/StealAndRun.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/StealAndRun.Build.cs" afterDir="false" />
-    </list>
+    <list default="true" id="6d0f64fc-5f0b-443a-ad61-773d9a582631" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -205,6 +198,7 @@
       <workItem from="1706116553121" duration="355000" />
       <workItem from="1706178242647" duration="3261000" />
       <workItem from="1706201819983" duration="6767000" />
+      <workItem from="1706219306654" duration="619000" />
     </task>
     <servers />
   </component>
