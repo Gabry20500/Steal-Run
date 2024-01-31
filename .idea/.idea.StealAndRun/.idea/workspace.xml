@@ -12,11 +12,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6d0f64fc-5f0b-443a-ad61-773d9a582631" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Door/BP_Door.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Door/BP_Door.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/Camera/BP_CameraFollow.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/Camera/BP_CameraFollow.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/FirstLevel1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/FirstLevel1.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/PlayerCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Public/PlayerCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +209,7 @@
       <workItem from="1706219306654" duration="619000" />
       <workItem from="1706623597709" duration="2000" />
       <workItem from="1706625070184" duration="8496000" />
-      <workItem from="1706718605150" duration="1067000" />
+      <workItem from="1706718605150" duration="3806000" />
     </task>
     <servers />
   </component>

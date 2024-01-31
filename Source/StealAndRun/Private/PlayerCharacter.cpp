@@ -1,10 +1,8 @@
 
 #include "PlayerCharacter.h"
 
-#include "InteractableDoor.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "PaperFlipbookComponent.h"
-#include "Components/CapsuleComponent.h"
 
 APlayerCharacter::APlayerCharacter()
 {
@@ -79,20 +77,7 @@ void APlayerCharacter::MoveRight(float AxisValue)
 
 void APlayerCharacter::Interact()
 {
-	// Trova tutti gli attori nelle vicinanze del personaggio che implementano l'interfaccia IInteractable
-	TArray<AActor*> OverlappingActors;
-	GetOverlappingActors(OverlappingActors);
-
-	// Cicla attraverso gli oggetti trovati
-	for (AActor* OverlappingActor : OverlappingActors)
-	{
-		// Controlla se l'oggetto supporta l'interfaccia IInteractable
-		if (IIInteractable* InteractableActor = Cast<IIInteractable>(OverlappingActor))
-		{
-			// Chiama la funzione Interact sull'oggetto
-			InteractableActor->Interact();
-		}
-	}	
+		
 }
 
 

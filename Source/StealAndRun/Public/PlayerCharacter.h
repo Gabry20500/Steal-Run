@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "IInteractable.h"
 #include "GameFramework/Character.h"
 #include "PlayerCharacter.generated.h"
 
@@ -34,8 +35,6 @@ protected:
 	virtual void Tick(float DeltaTime) override;
 	
 private:
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Collision", meta = (AllowPrivateAccess = "true"))
-	UCapsuleComponent* CollisionComponent;
 	
 	//Jump Variables
 	void OnJumpStart();
@@ -53,6 +52,11 @@ private:
 	float JumpStartTime = 0.0f;
 	
 
+	//Interact Variable
+	// UPROPERTY(EditAnywhere,BlueprintCallable, Category = "Interact")
+	// IIInteractable* Interactable = nullptr;
+
+	
 	//Run Variables
 	float BaseWalkSpeed;
 	bool bisRunning;
