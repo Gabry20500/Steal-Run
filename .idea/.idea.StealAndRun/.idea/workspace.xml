@@ -11,53 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d0f64fc-5f0b-443a-ad61-773d9a582631" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/AI_Controller.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/Animations/ABP_BaseEnemy.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/Animations/AIBlendSpace1D.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BBD_BaseEnemy.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BP_BaseEnemy.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BT_BaseEnemy.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/SecurityCamera/BP_SecurityCamera.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_ChasePlayer.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_GoBack.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_RoamForeward.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/GameDesignTool/GridMesh/Griglia_quad.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Door/BP_InteractableDoor.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Door/InteractWidget.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/MenuScript/BPW_LevelsSelection.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/MenuScript/BPW_MenuUi.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerCharacter.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/Player/Camera/BP_CameraFollow.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/Player/JumpCurve.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/ICollectable.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/InteractableDoor.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/StealAndRun/Public/InteractableDoor.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP_InLevelGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_InLevelGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/Camera/BP_CameraFollow.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/Camera/BP_CameraFollow.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/FirstLevel1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/FirstLevel1.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/Menu/L_MainMenu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Menu/L_MainMenu.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Scripts/Enemies/BaseAnemy/AI_Controller.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Scripts/Enemies/BaseAnemy/Animations/ABP_BaseEnemy.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Scripts/Enemies/BaseAnemy/Animations/AIBlendSpace1D.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Scripts/Enemies/BaseAnemy/BBD_BaseEnemy.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Scripts/Enemies/BaseAnemy/BP_BaseEnemy.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Scripts/Enemies/BaseAnemy/BT_BaseEnemy.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Scripts/Enemies/SecurityCamera/BP_SecurityCamera.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Scripts/Enemies/Tasks/BTTask_ChasePlayer.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Scripts/Enemies/Tasks/BTTask_GoBack.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Scripts/Enemies/Tasks/BTTask_RoamForeward.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Scripts/GameDesignTool/GridMesh/Griglia_quad.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Scripts/MenuScript/BPW_LevelsSelection.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Scripts/MenuScript/BPW_MenuUi.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Scripts/Player/BP_PlayerCharacter.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Scripts/Player/Camera/BP_CameraFollow.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Scripts/Player/JumpCurve.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/PlayerCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Public/PlayerCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StealAndRun.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/StealAndRun.uproject" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,28 +43,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Feature-CreateGameFlow",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Feature-CreateGameFlow&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\gabri\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache",
-      "C:\\Users\\gabri\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache",
-      "C:\\Users\\gabri\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\gabri\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\gabri\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\gabri\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="C++ Project.StealAndRun">
     <configuration name="StealAndRun" type="CppProject" factoryName="C++ Project">
       <configuration_1>
@@ -249,6 +208,7 @@
       <workItem from="1706219306654" duration="619000" />
       <workItem from="1706623597709" duration="2000" />
       <workItem from="1706625070184" duration="8496000" />
+      <workItem from="1706718605150" duration="1067000" />
     </task>
     <servers />
   </component>

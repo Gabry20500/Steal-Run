@@ -16,11 +16,6 @@ APlayerCharacter::APlayerCharacter()
 	Multi = 2.0f;
 	SlideTime = 1.0f;
 	bisRunning = false;
-
-	CollisionComponent = CreateDefaultSubobject<UCapsuleComponent>(TEXT("CollisionComponent"));
-	CollisionComponent->SetGenerateOverlapEvents(true);
-	CollisionComponent->OnComponentBeginOverlap.AddDynamic(this, &APlayerCharacter::OnOverlapBegin);
-	CollisionComponent->SetupAttachment(RootComponent);
 }
 
 
