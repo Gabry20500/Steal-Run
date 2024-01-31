@@ -32,11 +32,11 @@ protected:
 	virtual void BeginPlay() override;
 	
 	virtual void Tick(float DeltaTime) override;
-
-private:
 	
-	void MoveRight(float Axisvalue);
-
+private:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Collision", meta = (AllowPrivateAccess = "true"))
+	UCapsuleComponent* CollisionComponent;
+	
 	//Jump Variables
 	void OnJumpStart();
 	void OnJumpEnd();
@@ -62,4 +62,8 @@ private:
 	void StartRun();
 	void StopRun();
 	bool InputReceived();
+
+	void MoveRight(float Axisvalue);
+
+	void Interact();
 };

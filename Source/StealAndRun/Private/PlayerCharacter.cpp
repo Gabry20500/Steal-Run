@@ -1,7 +1,10 @@
 
 #include "PlayerCharacter.h"
+
+#include "InteractableDoor.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "PaperFlipbookComponent.h"
+#include "Components/CapsuleComponent.h"
 
 APlayerCharacter::APlayerCharacter()
 {
@@ -13,6 +16,11 @@ APlayerCharacter::APlayerCharacter()
 	Multi = 2.0f;
 	SlideTime = 1.0f;
 	bisRunning = false;
+
+	CollisionComponent = CreateDefaultSubobject<UCapsuleComponent>(TEXT("CollisionComponent"));
+	CollisionComponent->SetGenerateOverlapEvents(true);
+	CollisionComponent->OnComponentBeginOverlap.AddDynamic(this, &APlayerCharacter::OnOverlapBegin);
+	CollisionComponent->SetupAttachment(RootComponent);
 }
 
 
@@ -48,6 +56,7 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	InputComponent->BindAxis("MoveRight", this, &APlayerCharacter::MoveRight);
 	InputComponent->BindAction("Run", IE_Pressed, this, &APlayerCharacter::StartRun);
 	InputComponent->BindAction("Run", IE_Released, this, &APlayerCharacter::StopRun);
+	InputComponent->BindAction("Interact", IE_Pressed, this, &APlayerCharacter::Interact);
 }
 
 
@@ -71,22 +80,24 @@ void APlayerCharacter::MoveRight(float AxisValue)
 
 		PlayerDirection = EPlayerDirection::Left;
 	}
+}
 
-	
-	// if(Axisvalue > 0.0f)
-	// {
-	// 	PlayerDirection = EPlayerDirection::Right;
-	// 	SetActorRotation(GetActorRotation()+FRotator(0.0f, 0.0f, 180.0f));
-	// }
-	// else if(Axisvalue < 0.0f)
-	// {
-	// 	PlayerDirection = EPlayerDirection::Left;
-	// 	SetActorRotation(GetActorRotation()+FRotator(0.0f, 0.0f, -180.0f));
-	// }
-	// else
-	// {
-	// 	PlayerDirection = EPlayerDirection::None;
-	// }
+void APlayerCharacter::Interact()
+{
+	// Trova tutti gli attori nelle vicinanze del personaggio che implementano l'interfaccia IInteractable
+	TArray<AActor*> OverlappingActors;
+	GetOverlappingActors(OverlappingActors);
+
+	// Cicla attraverso gli oggetti trovati
+	for (AActor* OverlappingActor : OverlappingActors)
+	{
+		// Controlla se l'oggetto supporta l'interfaccia IInteractable
+		if (IIInteractable* InteractableActor = Cast<IIInteractable>(OverlappingActor))
+		{
+			// Chiama la funzione Interact sull'oggetto
+			InteractableActor->Interact();
+		}
+	}	
 }
 
 
