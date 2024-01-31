@@ -6,6 +6,16 @@
 #include "GameFramework/Character.h"
 #include "PlayerCharacter.generated.h"
 
+UENUM(BlueprintType)
+enum class EPlayerDirection : uint8
+{
+	None,
+	Left,
+	Right
+};
+
+
+
 UCLASS()
 class STEALANDRUN_API APlayerCharacter : public ACharacter
 {
@@ -30,6 +40,8 @@ private:
 	//Jump Variables
 	void OnJumpStart();
 	void OnJumpEnd();
+
+	EPlayerDirection PlayerDirection = EPlayerDirection::None;
 	
 	UPROPERTY(EditAnywhere, Category = "Jump")
 	float JumpZVelocity = 500.0f;

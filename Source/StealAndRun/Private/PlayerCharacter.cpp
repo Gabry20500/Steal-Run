@@ -1,7 +1,7 @@
 
 #include "PlayerCharacter.h"
 #include "GameFramework/CharacterMovementComponent.h"
-
+#include "PaperFlipbookComponent.h"
 
 APlayerCharacter::APlayerCharacter()
 {
@@ -46,15 +46,47 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 	InputComponent->BindAxis("MoveRight", this, &APlayerCharacter::MoveRight);
-	InputComponent->BindAction("Shift", IE_Pressed, this, &APlayerCharacter::StartRun);
-	InputComponent->BindAction("Shift", IE_Released, this, &APlayerCharacter::StopRun);
+	InputComponent->BindAction("Run", IE_Pressed, this, &APlayerCharacter::StartRun);
+	InputComponent->BindAction("Run", IE_Released, this, &APlayerCharacter::StopRun);
 }
 
 
-void APlayerCharacter::MoveRight(float Axisvalue)
+void APlayerCharacter::MoveRight(float AxisValue)
 {
-	FVector Direction = FVector(0.0f, -1.0f, 0.0f);
-	AddMovementInput(Direction, Axisvalue);
+	FVector Direction = FVector(0.0f, 1.0f, 0.0f);
+	AddMovementInput(Direction, AxisValue);
+
+	UPaperFlipbookComponent* FlipbookComponent = Cast<UPaperFlipbookComponent>(GetComponentByClass(UPaperFlipbookComponent::StaticClass()));
+	if (AxisValue > 0.0f)
+	{
+		if(PlayerDirection!=EPlayerDirection::Right)
+			FlipbookComponent->SetRelativeRotation(FRotator(0.0f, 0.0f, 0.0f));
+		
+		PlayerDirection = EPlayerDirection::Right;
+	}
+	else if (AxisValue < 0.0f)
+	{
+		if(PlayerDirection!=EPlayerDirection::Left)
+			FlipbookComponent->SetWorldRotation(FRotator(0.0f, 270.0f, 0.0f));
+
+		PlayerDirection = EPlayerDirection::Left;
+	}
+
+	
+	// if(Axisvalue > 0.0f)
+	// {
+	// 	PlayerDirection = EPlayerDirection::Right;
+	// 	SetActorRotation(GetActorRotation()+FRotator(0.0f, 0.0f, 180.0f));
+	// }
+	// else if(Axisvalue < 0.0f)
+	// {
+	// 	PlayerDirection = EPlayerDirection::Left;
+	// 	SetActorRotation(GetActorRotation()+FRotator(0.0f, 0.0f, -180.0f));
+	// }
+	// else
+	// {
+	// 	PlayerDirection = EPlayerDirection::None;
+	// }
 }
 
 
