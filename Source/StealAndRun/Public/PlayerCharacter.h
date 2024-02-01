@@ -3,7 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "IInteractable.h"
 #include "GameFramework/Character.h"
+#include "Components/BoxComponent.h"
 #include "PlayerCharacter.generated.h"
 
 UENUM(BlueprintType)
@@ -27,16 +29,22 @@ public:
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	//Interact Function and Variables
+	UFUNCTION(BlueprintCallable)
+	void OpenDoor(UBoxComponent* HitBoxComponent);
+	
+	UPROPERTY(BlueprintReadWrite, Category = "Interactable")
+	bool bIsInteracting = false;
+	
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	
 	virtual void Tick(float DeltaTime) override;
 
+	
 private:
 	
-	void MoveRight(float Axisvalue);
-
 	//Jump Variables
 	void OnJumpStart();
 	void OnJumpEnd();
@@ -53,6 +61,14 @@ private:
 	float JumpStartTime = 0.0f;
 	
 
+	//Interact Variable
+	AActor* ObjInteractable;
+	IIInteractable* ObjInteractableInterface;
+
+	
+	UFUNCTION(BlueprintCallable, Category = "Interactable")
+	void GetInteractableObject(AActor* Actor);
+	
 	//Run Variables
 	float BaseWalkSpeed;
 	bool bisRunning;
@@ -62,4 +78,8 @@ private:
 	void StartRun();
 	void StopRun();
 	bool InputReceived();
+
+	void MoveRight(float Axisvalue);
+
+	void Interact();
 };

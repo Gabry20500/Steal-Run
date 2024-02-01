@@ -1,7 +1,9 @@
 
 #include "PlayerCharacter.h"
+
 #include "GameFramework/CharacterMovementComponent.h"
 #include "PaperFlipbookComponent.h"
+#include "Components/BoxComponent.h"
 
 APlayerCharacter::APlayerCharacter()
 {
@@ -48,6 +50,20 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	InputComponent->BindAxis("MoveRight", this, &APlayerCharacter::MoveRight);
 	InputComponent->BindAction("Run", IE_Pressed, this, &APlayerCharacter::StartRun);
 	InputComponent->BindAction("Run", IE_Released, this, &APlayerCharacter::StopRun);
+	InputComponent->BindAction("Interact", IE_Pressed, this, &APlayerCharacter::Interact);
+}
+
+void APlayerCharacter::OpenDoor(UBoxComponent* HitBoxComponent)
+{
+	if (HitBoxComponent)
+	{
+		FVector TargetLocation = HitBoxComponent->GetComponentLocation();
+		SetActorLocation(TargetLocation);
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Reference a TargetBoxComponent nulla in OpenDoor"));
+	}
 }
 
 
@@ -71,22 +87,14 @@ void APlayerCharacter::MoveRight(float AxisValue)
 
 		PlayerDirection = EPlayerDirection::Left;
 	}
+}
 
-	
-	// if(Axisvalue > 0.0f)
-	// {
-	// 	PlayerDirection = EPlayerDirection::Right;
-	// 	SetActorRotation(GetActorRotation()+FRotator(0.0f, 0.0f, 180.0f));
-	// }
-	// else if(Axisvalue < 0.0f)
-	// {
-	// 	PlayerDirection = EPlayerDirection::Left;
-	// 	SetActorRotation(GetActorRotation()+FRotator(0.0f, 0.0f, -180.0f));
-	// }
-	// else
-	// {
-	// 	PlayerDirection = EPlayerDirection::None;
-	// }
+void APlayerCharacter::Interact()
+{
+	if(bIsInteracting)
+	{
+		ObjInteractableInterface->Interact_Implementation();
+	}
 }
 
 
@@ -101,6 +109,12 @@ void APlayerCharacter::OnJumpEnd()
 
 }
 
+
+void APlayerCharacter::GetInteractableObject(AActor* Actor)
+{
+	ObjInteractable = Actor;
+	ObjInteractableInterface = Cast<IIInteractable>(Actor);
+}
 
 void APlayerCharacter::StartRun()
 {

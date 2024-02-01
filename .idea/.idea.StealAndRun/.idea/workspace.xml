@@ -10,7 +10,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d0f64fc-5f0b-443a-ad61-773d9a582631" name="Changes" comment="" />
+    <list default="true" id="6d0f64fc-5f0b-443a-ad61-773d9a582631" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Door/BP_InterDoor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Door/BP_InterDoor.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/ICollectable.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/ICollectable.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/InteractableDoor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/InteractableDoor.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +29,7 @@
     <setting file="file://E:/EpicGames Launcher/UE_5.3/Engine/Source/Runtime/Engine/Private/Components/CharacterMovementComponent.cpp" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="Toolset" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -42,12 +48,12 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Feature-PlayerMovementMath&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Feature-CreateGameFlow&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -199,6 +205,14 @@
       <workItem from="1706178242647" duration="3261000" />
       <workItem from="1706201819983" duration="6767000" />
       <workItem from="1706219306654" duration="619000" />
+      <workItem from="1706623597709" duration="2000" />
+      <workItem from="1706625070184" duration="8496000" />
+      <workItem from="1706718605150" duration="4355000" />
+      <workItem from="1706736123369" duration="5078000" />
+      <workItem from="1706741558083" duration="18000" />
+      <workItem from="1706741639115" duration="296000" />
+      <workItem from="1706783451468" duration="9210000" />
+      <workItem from="1706815240351" duration="2257000" />
     </task>
     <servers />
   </component>
