@@ -52,7 +52,7 @@ void AInteractableDoor::Interact_Implementation()
 	FHitResult HitResult;
 	FCollisionQueryParams CollisionParams;
 	CollisionParams.AddIgnoredActor(this);
-
+	
 	FVector Position = StaticMeshComponent->GetComponentLocation();
 	FVector EndPos = GetActorForwardVector() * 100000 + Position;
 	bool bHit = GetWorld()->LineTraceSingleByChannel(HitResult, GetActorLocation(), EndPos,ECC_EngineTraceChannel2 , CollisionParams);

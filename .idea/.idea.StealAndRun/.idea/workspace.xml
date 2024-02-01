@@ -11,17 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d0f64fc-5f0b-443a-ad61-773d9a582631" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Door/BP_InterDoor.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MenuAssets/LevelsSelectionTestBack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/MenuAssets/LevelsSelectionTestBack.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MenuAssets/MainMenuTest.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/MenuAssets/MainMenuTest.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Door/BP_Door.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Door/BP_InterDoor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Door/BP_InterDoor.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/ICollectable.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/ICollectable.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/InteractableDoor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/InteractableDoor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/InteractableDoor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Public/InteractableDoor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/PlayerCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Public/PlayerCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +211,8 @@
       <workItem from="1706736123369" duration="5078000" />
       <workItem from="1706741558083" duration="18000" />
       <workItem from="1706741639115" duration="296000" />
-      <workItem from="1706783451468" duration="8616000" />
+      <workItem from="1706783451468" duration="9210000" />
+      <workItem from="1706815240351" duration="2257000" />
     </task>
     <servers />
   </component>

@@ -22,6 +22,8 @@ class STEALANDRUN_API IICollectable
 	GENERATED_BODY()
 
 public:
+	bool bIsPrimary;
+	
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Collectable")
 	void Collect();	
 };
