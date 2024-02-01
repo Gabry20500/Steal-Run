@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "CollectableObject.h"
 #include "IInteractable.h"
 #include "GameFramework/Character.h"
 #include "Components/BoxComponent.h"
@@ -35,7 +36,15 @@ public:
 	
 	UPROPERTY(BlueprintReadWrite, Category = "Interactable")
 	bool bIsInteracting = false;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Interactable")
+	bool bIsCollectable = false;
 	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Collectable")
+	int Score = 0;
+
+	UFUNCTION(BlueprintPure, Category = "Collectable")
+	FString GetScoreString(){ return  FString::Printf(TEXT("%d"), Score); }
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -63,11 +72,16 @@ private:
 
 	//Interact Variable
 	AActor* ObjInteractable;
+	AActor* ObjCollectable;
 	IIInteractable* ObjInteractableInterface;
+	ACollectableObject* ObjCollectableInterface;
 
 	
 	UFUNCTION(BlueprintCallable, Category = "Interactable")
 	void GetInteractableObject(AActor* Actor);
+
+	UFUNCTION(BlueprintCallable, Category = "Interactable")
+	void GetCollectableObject(AActor* Actor);
 	
 	//Run Variables
 	float BaseWalkSpeed;

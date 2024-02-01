@@ -94,6 +94,14 @@ void APlayerCharacter::Interact()
 	if(bIsInteracting)
 	{
 		ObjInteractableInterface->Interact_Implementation();
+		ObjInteractable = nullptr;
+		ObjInteractableInterface = nullptr;
+	}else if(bIsCollectable)
+	{
+		Score += ObjCollectableInterface->GetPoints();
+		ObjCollectableInterface->Collect_Implementation();
+		ObjCollectable = nullptr;
+		ObjCollectableInterface = nullptr;
 	}
 }
 
@@ -114,6 +122,12 @@ void APlayerCharacter::GetInteractableObject(AActor* Actor)
 {
 	ObjInteractable = Actor;
 	ObjInteractableInterface = Cast<IIInteractable>(Actor);
+}
+
+void APlayerCharacter::GetCollectableObject(AActor* Actor)
+{
+	ObjCollectable = Actor;
+	ObjCollectableInterface = Cast<ACollectableObject>(Actor);
 }
 
 void APlayerCharacter::StartRun()
