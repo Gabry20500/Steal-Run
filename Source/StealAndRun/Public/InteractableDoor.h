@@ -25,6 +25,8 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Interactable")
 	bool bIsPlayerNear = false;
+
+	
 	
 	void SetPlayerNear(bool bIsNear) { bIsPlayerNear = bIsNear; }
 	
@@ -34,4 +36,5 @@ public:
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Interactable")
 	void Interact();
 
+	UStaticMeshComponent* StaticMeshComponent;
 };

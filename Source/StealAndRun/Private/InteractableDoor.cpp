@@ -1,6 +1,11 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 #include "InteractableDoor.h"
 
+#include "PlayerCharacter.h"
+#include "Components/BoxComponent.h"
+#include "GameFramework/GameModeBase.h"
+#include "Kismet/GameplayStatics.h"
+
 // Sets default values
 AInteractableDoor::AInteractableDoor()
 {
@@ -13,6 +18,18 @@ AInteractableDoor::AInteractableDoor()
 void AInteractableDoor::BeginPlay()
 {
 	Super::BeginPlay();
+	StaticMeshComponent = GetComponentByClass<UStaticMeshComponent>();
+
+	if (StaticMeshComponent)
+	{
+		
+		UE_LOG(LogTemp, Warning, TEXT("Il componente UStaticMeshComponent è presente nell'attore padre"));
+	}
+	else
+	{
+		// Il componente richiesto non è presente nell'attore
+		UE_LOG(LogTemp, Warning, TEXT("Il componente UStaticMeshComponent non è presente nell'attore padre"));
+	}
 	
 }
 
@@ -23,14 +40,37 @@ void AInteractableDoor::Tick(float DeltaTime)
 
 	if (bIsPlayerNear)
 	{
-		Interact_Implementation();
+		//Interact_Implementation();
 	}
 
 }
 
 void AInteractableDoor::Interact_Implementation()
 {	
-	UE_LOG(LogTemp, Warning, TEXT("Porta aperta!"));
+	
+
+	FHitResult HitResult;
+	FCollisionQueryParams CollisionParams;
+	CollisionParams.AddIgnoredActor(this);
+
+	FVector Position = StaticMeshComponent->GetComponentLocation();
+	FVector EndPos = GetActorForwardVector() * 100000 + Position;
+	bool bHit = GetWorld()->LineTraceSingleByChannel(HitResult, GetActorLocation(), EndPos,ECC_EngineTraceChannel2 , CollisionParams);
+	if(bHit)
+	{
+		AActor* HitActor = HitResult.GetActor();
+		UBoxComponent* HitBoxComponent = HitActor->GetComponentByClass<UBoxComponent>();
+
+		if(HitBoxComponent)
+		{
+			APlayerCharacter* PlayerCharacter = Cast<APlayerCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+
+			if(PlayerCharacter)
+			{
+				PlayerCharacter->OpenDoor(HitBoxComponent);
+			}
+		}
+	}
 	bIsPlayerNear = false;
 }
 

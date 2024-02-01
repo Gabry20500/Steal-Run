@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "IInteractable.h"
 #include "GameFramework/Character.h"
+#include "Components/BoxComponent.h"
 #include "PlayerCharacter.generated.h"
 
 UENUM(BlueprintType)
@@ -28,11 +29,19 @@ public:
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	//Interact Function and Variables
+	UFUNCTION(BlueprintCallable)
+	void OpenDoor(UBoxComponent* HitBoxComponent);
+	
+	UPROPERTY(BlueprintReadWrite, Category = "Interactable")
+	bool bIsInteracting = false;
+	
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	
 	virtual void Tick(float DeltaTime) override;
+
 	
 private:
 	
@@ -53,9 +62,12 @@ private:
 	
 
 	//Interact Variable
-	// UPROPERTY(EditAnywhere,BlueprintCallable, Category = "Interact")
-	// IIInteractable* Interactable = nullptr;
+	AActor* ObjInteractable;
+	IIInteractable* ObjInteractableInterface;
 
+	
+	UFUNCTION(BlueprintCallable, Category = "Interactable")
+	void GetInteractableObject(AActor* Actor);
 	
 	//Run Variables
 	float BaseWalkSpeed;
