@@ -16,4 +16,6 @@ class STEALANDRUN_API AInLevelGameMode : public AGameModeBase
 
 public:
 	AInLevelGameMode();
+
+	bool bIsPrimaryObject = false;
 };
