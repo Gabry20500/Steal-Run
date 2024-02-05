@@ -3,7 +3,10 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "CollectableObject.h"
+#include "IInteractable.h"
 #include "GameFramework/Character.h"
+#include "Components/BoxComponent.h"
 #include "PlayerCharacter.generated.h"
 
 UENUM(BlueprintType)
@@ -27,16 +30,30 @@ public:
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	//Interact Function and Variables
+	UFUNCTION(BlueprintCallable)
+	void OpenDoor(UBoxComponent* HitBoxComponent);
+	
+	UPROPERTY(BlueprintReadWrite, Category = "Interactable")
+	bool bIsInteracting = false;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Interactable")
+	bool bIsCollectable = false;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Collectable")
+	int Score = 0;
+
+	UFUNCTION(BlueprintPure, Category = "Collectable")
+	FString GetScoreString(){ return  FString::Printf(TEXT("%d"), Score); }
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	
 	virtual void Tick(float DeltaTime) override;
 
+	
 private:
 	
-	void MoveRight(float Axisvalue);
-
 	//Jump Variables
 	void OnJumpStart();
 	void OnJumpEnd();
@@ -53,6 +70,19 @@ private:
 	float JumpStartTime = 0.0f;
 	
 
+	//Interact Variable
+	AActor* ObjInteractable;
+	AActor* ObjCollectable;
+	IIInteractable* ObjInteractableInterface;
+	ACollectableObject* ObjCollectableInterface;
+
+	
+	UFUNCTION(BlueprintCallable, Category = "Interactable")
+	void GetInteractableObject(AActor* Actor);
+
+	UFUNCTION(BlueprintCallable, Category = "Interactable")
+	void GetCollectableObject(AActor* Actor);
+	
 	//Run Variables
 	float BaseWalkSpeed;
 	bool bisRunning;
@@ -62,4 +92,8 @@ private:
 	void StartRun();
 	void StopRun();
 	bool InputReceived();
+
+	void MoveRight(float Axisvalue);
+
+	void Interact();
 };
