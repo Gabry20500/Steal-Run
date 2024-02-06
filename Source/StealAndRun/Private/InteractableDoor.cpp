@@ -19,18 +19,6 @@ void AInteractableDoor::BeginPlay()
 {
 	Super::BeginPlay();
 	StaticMeshComponent = GetComponentByClass<UStaticMeshComponent>();
-
-	if (StaticMeshComponent)
-	{
-		
-		UE_LOG(LogTemp, Warning, TEXT("Il componente UStaticMeshComponent è presente nell'attore padre"));
-	}
-	else
-	{
-		// Il componente richiesto non è presente nell'attore
-		UE_LOG(LogTemp, Warning, TEXT("Il componente UStaticMeshComponent non è presente nell'attore padre"));
-	}
-	
 }
 
 // Called every frame
@@ -46,9 +34,7 @@ void AInteractableDoor::Tick(float DeltaTime)
 }
 
 void AInteractableDoor::Interact_Implementation()
-{	
-	
-
+{
 	FHitResult HitResult;
 	FCollisionQueryParams CollisionParams;
 	CollisionParams.AddIgnoredActor(this);

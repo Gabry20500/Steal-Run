@@ -22,7 +22,14 @@ class STEALANDRUN_API IICollectable
 	GENERATED_BODY()
 
 public:
+
+	
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Collectable")
+	int GetPoints();
+	virtual int GetPoints_Implementation() = 0;
+	
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Collectable")
 	void Collect();
+	virtual void Collect_Implementation() = 0;
 	
 };

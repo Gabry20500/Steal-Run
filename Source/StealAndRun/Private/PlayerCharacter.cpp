@@ -40,6 +40,15 @@ void APlayerCharacter::Tick(float DeltaTime)
 			GetCharacterMovement()->Velocity *= 0.8f;
 		}
 	}
+
+	if(!bIsInteracting)
+	{
+		ObjInteractable = nullptr;
+	}
+	if(!bIsCollectable)
+	{
+		ObjCollectable = nullptr;
+	}
 }
 
 
@@ -93,15 +102,12 @@ void APlayerCharacter::Interact()
 {
 	if(bIsInteracting)
 	{
-		ObjInteractableInterface->Interact_Implementation();
-		ObjInteractable = nullptr;
-		ObjInteractableInterface = nullptr;
+		if(ObjInteractable->Implements<UIInteractable>())
+			IIInteractable::Execute_Interact(ObjInteractable);
 	}else if(bIsCollectable)
 	{
-		Score += ObjCollectableInterface->GetPoints();
-		ObjCollectableInterface->Collect_Implementation();
-		ObjCollectable = nullptr;
-		ObjCollectableInterface = nullptr;
+		Score += IICollectable::Execute_GetPoints(ObjCollectable);
+		IICollectable::Execute_Collect(ObjCollectable);
 	}
 }
 
@@ -121,13 +127,11 @@ void APlayerCharacter::OnJumpEnd()
 void APlayerCharacter::GetInteractableObject(AActor* Actor)
 {
 	ObjInteractable = Actor;
-	ObjInteractableInterface = Cast<IIInteractable>(Actor);
 }
 
 void APlayerCharacter::GetCollectableObject(AActor* Actor)
 {
 	ObjCollectable = Actor;
-	ObjCollectableInterface = Cast<ACollectableObject>(Actor);
 }
 
 void APlayerCharacter::StartRun()

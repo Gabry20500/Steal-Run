@@ -10,7 +10,7 @@
 /**
  * 
  */
-UINTERFACE(MinimalAPI)
+UINTERFACE(Blueprintable)
 class UIInteractable : public UInterface
 {
 	GENERATED_BODY()
@@ -25,4 +25,5 @@ public:
 	
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Interactable")
 	void Interact();
+	virtual void Interact_Implementation() = 0;
 };

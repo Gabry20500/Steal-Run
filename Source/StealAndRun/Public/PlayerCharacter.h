@@ -43,6 +43,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Collectable")
 	int Score = 0;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Collectable")
+	AActor* ObjInteractable;
 	UFUNCTION(BlueprintPure, Category = "Collectable")
 	FString GetScoreString(){ return  FString::Printf(TEXT("%d"), Score); }
 protected:
@@ -71,10 +73,7 @@ private:
 	
 
 	//Interact Variable
-	AActor* ObjInteractable;
 	AActor* ObjCollectable;
-	IIInteractable* ObjInteractableInterface;
-	ACollectableObject* ObjCollectableInterface;
 
 	
 	UFUNCTION(BlueprintCallable, Category = "Interactable")

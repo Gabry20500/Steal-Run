@@ -27,8 +27,7 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Collectable")
 	bool bIsPrimary = false;
 	
-	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Collectable")
-	void Collect();
+	void Collect_Implementation() override; 
 
-	int GetPoints();
+	int GetPoints_Implementation() override;
 };
