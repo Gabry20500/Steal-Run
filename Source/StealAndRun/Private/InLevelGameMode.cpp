@@ -10,22 +10,9 @@ AInLevelGameMode::AInLevelGameMode()
 	DefaultPawnClass = APlayerCharacter::StaticClass();
 }
 
-void AInLevelGameMode::StartSecondPhase()
-{
-	
-}
-
-void AInLevelGameMode::ResetAtFirstPhase()
-{
-}
 
 //Protected function
 void AInLevelGameMode::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
-
-	if(bPrimaryObjectObtained)
-	{
-		StartSecondPhase();
-	}
 }

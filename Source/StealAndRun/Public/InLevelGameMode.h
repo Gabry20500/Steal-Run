@@ -4,7 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
-#include "Blueprint/UserWidgetBlueprint.h"
 #include "InLevelGameMode.generated.h"
 
 /**
@@ -17,21 +16,15 @@ class STEALANDRUN_API AInLevelGameMode : public AGameModeBase
 
 public:
 	AInLevelGameMode();
-	
-	void SetPrimaryObjectObtained(bool bGetted) { bPrimaryObjectObtained = bGetted; }
-
-	bool GetPrimaryObjectObtained() const { return bPrimaryObjectObtained; }
-	
-	void StartSecondPhase();
 
 	UFUNCTION(BlueprintCallable, Category = "GamePhase")
-	void ResetAtFirstPhase();
+	void SetPrimaryObjectObtained(bool bGetted) { bPrimaryObjectObtained = bGetted; }
 
-	// UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HUD")
-	// UUserWidgetBlueprint* UIWidget;
-	
+	UFUNCTION(BlueprintCallable, Category = "GamePhase")
+	bool GetPrimaryObjectObtained() const { return bPrimaryObjectObtained; }
+
 protected:
-	void Tick(float DeltaSeconds) override;
-	
 	bool bPrimaryObjectObtained = false;
+
+	void Tick(float DeltaSeconds) override;
 };
