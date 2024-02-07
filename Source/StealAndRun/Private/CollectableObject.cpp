@@ -3,6 +3,9 @@
 
 #include "CollectableObject.h"
 
+#include "InLevelGameMode.h"
+#include "Kismet/GameplayStatics.h"
+
 // Sets default values
 ACollectableObject::ACollectableObject()
 {
@@ -11,23 +14,13 @@ ACollectableObject::ACollectableObject()
 
 }
 
-// Called when the game starts or when spawned
-void ACollectableObject::BeginPlay()
-{
-	Super::BeginPlay();
-	
-}
-
-// Called every frame
-void ACollectableObject::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-}
-
-
 void ACollectableObject::Collect_Implementation()
 {
+	if(bIsPrimary)
+	{
+		AInLevelGameMode* GameMode = Cast< AInLevelGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
+		GameMode->SetPrimaryObjectObtained(true);
+	}
 	this->Destroy();
 }
 

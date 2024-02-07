@@ -15,12 +15,6 @@ class STEALANDRUN_API ACollectableObject : public AActor, public IICollectable
 public:	
 	ACollectableObject();
 
-protected:
-	virtual void BeginPlay() override;
-
-public:	
-	virtual void Tick(float DeltaTime) override;
-
 	UPROPERTY(EditAnywhere, Category = "Collectable")
 	int PointsEarned;
 	
