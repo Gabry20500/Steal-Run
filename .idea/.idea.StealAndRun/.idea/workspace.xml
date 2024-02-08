@@ -11,25 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d0f64fc-5f0b-443a-ad61-773d9a582631" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Fonts/upheavtt.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Fonts/upheavtt_Font.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/EndLevel/BP_EndLevelTriggerBox.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_ChasePlayerWithObj.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/MenuScript/BPW_GameOverScreen.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/BluePrints/MenuScript/BPW_WinScreen.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Levels/EndLevel.umap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Levels/EndLevelGameOver.umap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Levels/EndLevelWin.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP_InLevelGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_InLevelGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BBD_BaseEnemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BBD_BaseEnemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BP_BaseEnemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BP_BaseEnemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BT_BaseEnemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BT_BaseEnemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_ChasePlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_ChasePlayer.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/UI/WB_UIPlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/UI/WB_UIPlayer.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/FirstLevel1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/FirstLevel1.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,6 +227,7 @@
       <workItem from="1707383245274" duration="597000" />
       <workItem from="1707391601111" duration="176000" />
       <workItem from="1707391940205" duration="1398000" />
+      <workItem from="1707413731321" duration="710000" />
     </task>
     <servers />
   </component>
