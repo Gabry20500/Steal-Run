@@ -107,6 +107,7 @@ void APlayerCharacter::Interact()
 	}else if(bIsCollectable)
 	{
 		Score += IICollectable::Execute_GetPoints(ObjCollectable);
+		UE_LOG(LogTemp, Warning, TEXT("%d"), Score);
 		IICollectable::Execute_Collect(ObjCollectable);
 	}
 }

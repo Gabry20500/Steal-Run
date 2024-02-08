@@ -11,13 +11,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d0f64fc-5f0b-443a-ad61-773d9a582631" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/Assets/Fonts/upheavtt.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Assets/Fonts/upheavtt_Font.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/BluePrints/EndLevel/BP_EndLevelTriggerBox.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_ChasePlayerWithObj.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/BluePrints/MenuScript/BPW_GameOverScreen.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/BluePrints/MenuScript/BPW_WinScreen.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Levels/EndLevel.umap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Levels/EndLevelGameOver.umap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Levels/EndLevelWin.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BP_InLevelGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_InLevelGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BBD_BaseEnemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BBD_BaseEnemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BP_BaseEnemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BP_BaseEnemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BT_BaseEnemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BT_BaseEnemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_ChasePlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_ChasePlayer.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/UI/WB_UIPlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/UI/WB_UIPlayer.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/FirstLevel1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/FirstLevel1.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/InLevelGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/InLevelGameMode.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/InLevelGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Public/InLevelGameMode.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +40,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Source/StealAndRun/Private/InLevelGameMode.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/StealAndRun/Private/InteractableDoor.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/StealAndRun/Public/InLevelGameMode.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/StealAndRun/Private/InLevelGameMode.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/StealAndRun/Private/InteractableDoor.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/StealAndRun/Public/InLevelGameMode.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/EpicGames Launcher/UE_5.3/Engine/Source/Runtime/Engine/Private/Components/CharacterMovementComponent.cpp" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
@@ -228,6 +240,11 @@
       <workItem from="1707225453423" duration="8966000" />
       <workItem from="1707296183958" duration="12737000" />
       <workItem from="1707326110141" duration="1195000" />
+      <workItem from="1707341870124" duration="321000" />
+      <workItem from="1707382247564" duration="147000" />
+      <workItem from="1707383245274" duration="597000" />
+      <workItem from="1707391601111" duration="176000" />
+      <workItem from="1707391940205" duration="1398000" />
     </task>
     <servers />
   </component>
