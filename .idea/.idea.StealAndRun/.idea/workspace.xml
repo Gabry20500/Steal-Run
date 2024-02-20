@@ -12,6 +12,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6d0f64fc-5f0b-443a-ad61-773d9a582631" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/SandBox_Level/SandBoxLevel/0/E2/LG3JSDNZ2PR2ABPC19GX19.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/SandBox_Level/SandBoxLevel/2/KL/1JZZMRZFAV1Q65SMQTO6OE.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/SandBox_Level/SandBoxLevel/2/KL/1JZZMRZFAV1Q65SMQTO6OE.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/SandBox_Level/SandBoxLevel/4/R9/5NU2JIV1IUMDDYZRBJ6KLQ.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/SandBox_Level/SandBoxLevel/5/LZ/0IL7SHHLOO0YTGB9V2KM5X.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/SandBox_Level/SandBoxLevel/5/LZ/0IL7SHHLOO0YTGB9V2KM5X.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/SandBox_Level/SandBoxLevel/D/UL/DSHIZ9WTULPTVPUQQ0N1Y4.uasset" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,6 +234,9 @@
       <workItem from="1707391601111" duration="176000" />
       <workItem from="1707391940205" duration="1398000" />
       <workItem from="1707413731321" duration="710000" />
+      <workItem from="1708346996150" duration="39000" />
+      <workItem from="1708438255174" duration="55000" />
+      <workItem from="1708440003482" duration="1190000" />
     </task>
     <servers />
   </component>
