@@ -20,15 +20,31 @@ void AInteractablePlatform::BeginPlay()
 	MeshComponent = FindComponentByClass<UStaticMeshComponent>();
 }
 
+
+void AInteractablePlatform::SetPlayerVelocity(FVector PlayerVel, APlayerCharacter* PlayerRef)
+{
+	PlayerVelocity = PlayerVel;
+	Player = PlayerRef;
+}
+
 // Called every frame
 void AInteractablePlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if(isInFalling == false)
+	{
+		if(PlayerVelocity.Z > 0 && Player->GetActorLocation().Z < GetActorLocation().Z)
+		{
+			MeshComponent->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Ignore);
+			GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AInteractablePlatform::ResetPlatform, TimeToGoUp, false);
+		}
+	}
 }
 
 void AInteractablePlatform::Interact_Implementation()
 {
+	isInFalling = true;
 	MeshComponent->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Ignore);
 	GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AInteractablePlatform::ResetPlatform, TimeToReset, false);
 }
@@ -36,5 +52,6 @@ void AInteractablePlatform::Interact_Implementation()
 void AInteractablePlatform::ResetPlatform()
 {
 	MeshComponent->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Block);
+	isInFalling = false;
 }
 

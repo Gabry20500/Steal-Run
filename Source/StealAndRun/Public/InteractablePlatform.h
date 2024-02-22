@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "IInteractable.h"
+#include "PlayerCharacter.h"
 #include "InteractablePlatform.generated.h"
 
 UCLASS()
@@ -23,9 +24,19 @@ protected:
 	UStaticMeshComponent* MeshComponent;
 
 	FTimerHandle TimerHandle;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Interactable")
+	float TimeToGoUp = 0.3f;
 	float TimeToReset = 2.0f;
+
+	FVector PlayerVelocity;
+	APlayerCharacter* Player;
+	bool isInFalling;
+	
 	
 public:	
+
+	UFUNCTION(BlueprintCallable, Category = "Interactable")
+	bool GetIsInFalling() { return isInFalling; }
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	
@@ -33,4 +44,6 @@ public:
 
 	void ResetPlatform();
 
+	UFUNCTION(Blueprintable, BlueprintCallable, Category = "Interactable")
+	void SetPlayerVelocity(FVector PlayerVel, APlayerCharacter* PlayerRef);
 };
