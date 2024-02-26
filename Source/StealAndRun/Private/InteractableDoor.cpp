@@ -18,6 +18,7 @@ AInteractableDoor::AInteractableDoor()
 void AInteractableDoor::BeginPlay()
 {
 	Super::BeginPlay();
+	PlayerRef = Cast<APlayerCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
 	StaticMeshComponent = GetComponentByClass<UStaticMeshComponent>();
 }
 
@@ -35,25 +36,21 @@ void AInteractableDoor::Tick(float DeltaTime)
 
 void AInteractableDoor::Interact_Implementation()
 {
-	FHitResult HitResult;
-	FCollisionQueryParams CollisionParams;
-	CollisionParams.AddIgnoredActor(this);
-	
-	FVector Position = StaticMeshComponent->GetComponentLocation();
-	FVector EndPos = GetActorForwardVector() * 100000 + Position;
-	bool bHit = GetWorld()->LineTraceSingleByChannel(HitResult, GetActorLocation(), EndPos,ECC_EngineTraceChannel2 , CollisionParams);
-	if(bHit)
+	TArray<AActor*> FoundActors;
+	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AInteractableDoor::StaticClass(), FoundActors);
+
+	for (AActor* FoundActor : FoundActors)
 	{
-		AActor* HitActor = HitResult.GetActor();
-		UBoxComponent* HitBoxComponent = HitActor->GetComponentByClass<UBoxComponent>();
-
-		if(HitBoxComponent)
+		if(FoundActor->ActorHasTag(NextDoorTag))
 		{
-			APlayerCharacter* PlayerCharacter = Cast<APlayerCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
-
-			if(PlayerCharacter)
+			UBoxComponent* HitBoxComponent = FoundActor->GetComponentByClass<UBoxComponent>();
+	
+			if(HitBoxComponent)
 			{
-				PlayerCharacter->OpenDoor(HitBoxComponent);
+				if(PlayerRef)
+				{
+					PlayerRef->OpenDoor(HitBoxComponent);
+				}
 			}
 		}
 	}

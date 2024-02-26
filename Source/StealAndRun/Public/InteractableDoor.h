@@ -5,14 +5,15 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "IInteractable.h"
+#include "PlayerCharacter.h"
 #include "InteractableDoor.generated.h"
 
 UCLASS()
 class STEALANDRUN_API AInteractableDoor : public AActor, public IIInteractable
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	// Sets default values for this actor's properties
 	AInteractableDoor();
 
@@ -20,19 +21,20 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	
-public:
+	APlayerCharacter* PlayerRef;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Interactable")
+public:
 	bool bIsPlayerNear = false;
 
-	
-	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "OutputDoorTag")
+	FName NextDoorTag;
+
+
 	void SetPlayerNear(bool bIsNear) { bIsPlayerNear = bIsNear; }
-	
+
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-	
+
 	void Interact_Implementation() override;
 
 	UStaticMeshComponent* StaticMeshComponent;
