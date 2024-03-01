@@ -12,12 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6d0f64fc-5f0b-443a-ad61-773d9a582631" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/PlayerBP_Animation.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/PlayerBP_Animation.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/MenuScript/BPW_MenuUi.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/MenuScript/BPW_MenuUi.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/InteractableDoor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/InteractableDoor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/InteractableDoor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Public/InteractableDoor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/InteractablePlatform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/InteractablePlatform.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +237,8 @@
       <workItem from="1708532164284" duration="2218000" />
       <workItem from="1708590154628" duration="3847000" />
       <workItem from="1708682203600" duration="1089000" />
-      <workItem from="1708938631246" duration="3887000" />
+      <workItem from="1708938631246" duration="4478000" />
+      <workItem from="1709045704743" duration="3474000" />
     </task>
     <servers />
   </component>

@@ -3,6 +3,8 @@
 
 #include "InteractablePlatform.h"
 
+#include "GameFramework/CharacterMovementComponent.h"
+
 // Sets default values
 AInteractablePlatform::AInteractablePlatform()
 {
@@ -37,7 +39,9 @@ void AInteractablePlatform::Tick(float DeltaTime)
 		if(PlayerVelocity.Z > 0 && Player->GetActorLocation().Z < GetActorLocation().Z)
 		{
 			MeshComponent->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Ignore);
-			GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AInteractablePlatform::ResetPlatform, TimeToGoUp, false);
+			Player->GetCharacterMovement()->SetMovementMode(MOVE_Flying);
+			Player->SetActorLocation(FVector(GetActorLocation().X, GetActorLocation().Y, GetActorLocation().Z - 50.f));
+			//GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AInteractablePlatform::ResetPlatform, TimeToGoUp, false);
 		}
 	}
 }
