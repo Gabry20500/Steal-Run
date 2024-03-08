@@ -12,17 +12,16 @@
   <component name="ChangeListManager">
     <list default="true" id="6d0f64fc-5f0b-443a-ad61-773d9a582631" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/AS_Browser_Animation.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/AS_Browser_Animation.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/AnimSequences/mantle_player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/AnimSequences/mantle_player.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/EnemyBP_Animation.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/EnemyBP_Animation.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/MantlePosition.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/MantlePosition.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/PlayerBP_Animation.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/PlayerBP_Animation.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/PlayerBP_StateMachine.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/PlayerBP_StateMachine.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/Player_Sprites/ChangPosition.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Platform/BP_InteractablePlatform.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Platform/BP_InteractablePlatform.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/MenuScript/BPW_MenuUi.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/MenuScript/BPW_MenuUi.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TestFolder/Mantle_D.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TestFolder/Mantle_D.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/UI/WB_UIPlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/UI/WB_UIPlayer.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/EndLevel.umap" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,6 +250,7 @@
       <workItem from="1709637071759" duration="1870000" />
       <workItem from="1709644399016" duration="1617000" />
       <workItem from="1709717918575" duration="765000" />
+      <workItem from="1709885888165" duration="598000" />
     </task>
     <servers />
   </component>
