@@ -1,0 +1,852 @@
+{
+	"folders": [
+		{
+			"name": "StealAndRun",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/Users/Shared/Epic Games/UE_5.3"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp",
+			"vadimcn.vscode-lldb",
+			"ms-vscode.mono-debug",
+			"dfarley1.file-picker"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "StealAndRun Mac Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"Mac",
+					"Debug",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun Mac Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"Mac",
+					"Debug",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"StealAndRun Mac Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun Mac Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"Mac",
+					"Debug",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun Mac DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"Mac",
+					"DebugGame",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun Mac DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"Mac",
+					"DebugGame",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"StealAndRun Mac DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun Mac DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"Mac",
+					"DebugGame",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun Mac Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"Mac",
+					"Development",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun Mac Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"Mac",
+					"Development",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"StealAndRun Mac Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun Mac Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"Mac",
+					"Development",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun Mac Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"Mac",
+					"Test",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun Mac Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"Mac",
+					"Test",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"StealAndRun Mac Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun Mac Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"Mac",
+					"Test",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun Mac Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"Mac",
+					"Shipping",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun Mac Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"Mac",
+					"Shipping",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"StealAndRun Mac Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun Mac Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"Mac",
+					"Shipping",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun IOS Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"IOS",
+					"Debug",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun IOS Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"IOS",
+					"Debug",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"StealAndRun IOS Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun IOS Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"IOS",
+					"Debug",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun IOS DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"IOS",
+					"DebugGame",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun IOS DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"IOS",
+					"DebugGame",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"StealAndRun IOS DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun IOS DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"IOS",
+					"DebugGame",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun IOS Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"IOS",
+					"Development",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun IOS Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"IOS",
+					"Development",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"StealAndRun IOS Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun IOS Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"IOS",
+					"Development",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun IOS Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"IOS",
+					"Test",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun IOS Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"IOS",
+					"Test",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"StealAndRun IOS Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun IOS Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"IOS",
+					"Test",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun IOS Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"IOS",
+					"Shipping",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun IOS Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"IOS",
+					"Shipping",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"StealAndRun IOS Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRun IOS Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRun",
+					"IOS",
+					"Shipping",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRunEditor Mac Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRunEditor",
+					"Mac",
+					"Debug",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRunEditor Mac Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRunEditor",
+					"Mac",
+					"Debug",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"StealAndRunEditor Mac Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRunEditor Mac Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRunEditor",
+					"Mac",
+					"Debug",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRunEditor Mac DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRunEditor",
+					"Mac",
+					"DebugGame",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRunEditor Mac DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRunEditor",
+					"Mac",
+					"DebugGame",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"StealAndRunEditor Mac DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRunEditor Mac DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRunEditor",
+					"Mac",
+					"DebugGame",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRunEditor Mac Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRunEditor",
+					"Mac",
+					"Development",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRunEditor Mac Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRunEditor",
+					"Mac",
+					"Development",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"StealAndRunEditor Mac Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "StealAndRunEditor Mac Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"StealAndRunEditor",
+					"Mac",
+					"Development",
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch StealAndRun (Debug)",
+				"request": "launch",
+				"program": "/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/Binaries/Mac/UnrealGame-Mac-Debug.app/Contents/MacOS/UnrealGame-Mac-Debug",
+				"preLaunchTask": "StealAndRun Mac Debug Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch StealAndRun (DebugGame)",
+				"request": "launch",
+				"program": "/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/Binaries/Mac/UnrealGame-Mac-DebugGame.app/Contents/MacOS/UnrealGame-Mac-DebugGame",
+				"preLaunchTask": "StealAndRun Mac DebugGame Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch StealAndRun (Development)",
+				"request": "launch",
+				"program": "/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/Binaries/Mac/UnrealGame.app/Contents/MacOS/UnrealGame",
+				"preLaunchTask": "StealAndRun Mac Development Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch StealAndRun (Test)",
+				"request": "launch",
+				"program": "/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/Binaries/Mac/UnrealGame-Mac-Test.app/Contents/MacOS/UnrealGame-Mac-Test",
+				"preLaunchTask": "StealAndRun Mac Test Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch StealAndRun (Shipping)",
+				"request": "launch",
+				"program": "/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/Binaries/Mac/UnrealGame-Mac-Shipping.app/Contents/MacOS/UnrealGame-Mac-Shipping",
+				"preLaunchTask": "StealAndRun Mac Shipping Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch StealAndRunEditor (Debug)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.3/Engine/Binaries/Mac/UnrealEditor-Mac-Debug.app/Contents/MacOS/UnrealEditor-Mac-Debug",
+				"preLaunchTask": "StealAndRunEditor Mac Debug Build",
+				"args": [
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch StealAndRunEditor (DebugGame)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.3/Engine/Binaries/Mac/UnrealEditor-Mac-DebugGame.app/Contents/MacOS/UnrealEditor-Mac-DebugGame",
+				"preLaunchTask": "StealAndRunEditor Mac DebugGame Build",
+				"args": [
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch StealAndRunEditor (Development)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.3/Engine/Binaries/Mac/UnrealEditor.app/Contents/MacOS/UnrealEditor",
+				"preLaunchTask": "StealAndRunEditor Mac Development Build",
+				"args": [
+					"/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Mac Development Build",
+				"program": "/Users/Shared/Epic Games/UE_5.3/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=/Users/giorgioferretti/Documents/GitHub/Progetto_Comune_Steal_Run/Senza nome/StealAndRun.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/Users/Shared/Epic Games/UE_5.3"
+			}
+		]
+	}
+}
