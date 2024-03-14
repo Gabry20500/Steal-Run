@@ -11,17 +11,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d0f64fc-5f0b-443a-ad61-773d9a582631" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/Assets/UIAssets/1.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/BluePrints/Player/Wall.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst10.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst10.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst11.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst11.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst12.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst12.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst13.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst13.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst14.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst14.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst15.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst15.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst16.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst16.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst3.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst4.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst5.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst5.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst6.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst6.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst7.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst7.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst8.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst8.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst9.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Materiali/Master_mat_Inst9.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Smart_MAT/M_Ditering_Inst.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Smart_MAT/M_IDmask.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Smart_MAT/M_SpriteAnimation.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Smart_MAT/M_SpriteAnimation_Inst.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Smart_MAT/M_Texture_EM_Inst.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Smart_MAT/M_Texture_EM_Inst1.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Smart_MAT/M_Volumetric.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/Smart_MAT/Night-City-Silhouette-of-Petronas-Tower-Graphics-3644911-1_Mat.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Materiali/muro_mat_Inst13.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Materiali/muro_mat_Inst13.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/AS_Browser_Animation.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/AS_Browser_Animation.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/AnimSequences/mantle_player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/AnimSequences/mantle_player.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/EnemyBP_Animation.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/EnemyBP_Animation.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/MantlePosition.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/MantlePosition.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/PlayerBP_Animation.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/PlayerBP_Animation.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/PlayerBP_StateMachine.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/PlayerBP_StateMachine.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/MenuScript/BPW_MenuUi.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/MenuScript/BPW_MenuUi.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/CollectableObject/BP_CollectableObject.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/CollectableObject/BP_CollectableObject.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Door/BP_InterDoor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Door/BP_InterDoor.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Platform/BP_InteractablePlatform.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Platform/BP_InteractablePlatform.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Window/BP_InteractableWindow.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Window/BP_InteractableWindow.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/UI/WB_UIPlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/UI/WB_UIPlayer.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/EndLevel.umap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/CryptoTower.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/CryptoTower.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TestFolder/Mantle_D.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TestFolder/Mantle_D.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TestFolder/Mantle_D_Sprite_3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TestFolder/Mantle_D_Sprite_3.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TestFolder/Mantle_D_Sprite_4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TestFolder/Mantle_D_Sprite_4.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TestFolder/Mantle_D_Sprite_5.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TestFolder/Mantle_D_Sprite_5.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/InteractablePlatform.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Public/InteractablePlatform.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/PlayerCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Public/PlayerCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/StealAndRun.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/StealAndRun.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,30 +92,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;C++ Project.StealAndRun.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Feature-PlayerMovement&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "C++ Project.StealAndRun.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Feature-PlayerMovement",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CppUnrealEngineOptionsId",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\gabri\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\gabri\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\gabri\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\gabri\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\gabri\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\gabri\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="C++ Project.StealAndRun">
     <configuration name="StealAndRun" type="CppProject" factoryName="C++ Project">
       <configuration_1>
@@ -250,7 +291,11 @@
       <workItem from="1709637071759" duration="1870000" />
       <workItem from="1709644399016" duration="1617000" />
       <workItem from="1709717918575" duration="765000" />
-      <workItem from="1709885888165" duration="598000" />
+      <workItem from="1709885888165" duration="1876000" />
+      <workItem from="1710233483795" duration="9613000" />
+      <workItem from="1710321022434" duration="275000" />
+      <workItem from="1710321332774" duration="4991000" />
+      <workItem from="1710404296547" duration="6282000" />
     </task>
     <servers />
   </component>

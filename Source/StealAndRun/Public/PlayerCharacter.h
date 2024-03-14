@@ -7,6 +7,7 @@
 #include "IInteractable.h"
 #include "GameFramework/Character.h"
 #include "Components/BoxComponent.h"
+#include "Components/SphereComponent.h"
 #include "PlayerCharacter.generated.h"
 
 UENUM(BlueprintType)
@@ -29,25 +30,44 @@ public:
 	APlayerCharacter();
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-	//Interact Function and Variables
-	UFUNCTION(BlueprintCallable)
-	void OpenDoor(UBoxComponent* HitBoxComponent);
+	
 	
 	UPROPERTY(BlueprintReadWrite, Category = "Interactable")
 	bool bIsInteracting = false;
-
-	UPROPERTY(BlueprintReadWrite, Category = "Interactable")
-	bool bIsCollectable = false;
 	
+	UPROPERTY(BlueprintReadWrite, Category = "Collectable")
+	bool bIsCollectable = false;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Collectable")
 	int Score = 0;
+	
+	UPROPERTY(EditAnywhere ,BlueprintReadWrite, Category = "Mantle")
+	bool bIsOverlappingWithMantle;
+	
+	
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Collectable")
-	AActor* ObjInteractable;
+
+	UFUNCTION(BlueprintCallable)
+	void OpenDoor(UBoxComponent* HitBoxComponent);
+
+	//Getters and Setters
+	UFUNCTION(BlueprintCallable, Category = "Interactable")
+	void SetbIsInteracting(bool value) { bIsInteracting = value; }
+	
+	UFUNCTION(BlueprintCallable, Category = "Collectable")
+	void SetbIsCollectable(bool value) { bIsCollectable = value; }
+
 	UFUNCTION(BlueprintPure, Category = "Collectable")
 	FString GetScoreString(){ return  FString::Printf(TEXT("%d"), Score); }
+
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "Mantle")
+	FVector GetMantleLocation() { return MantleLocation; }
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Collectable")
+	AActor* ObjInteractable;
+	
 protected:
+	
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	
@@ -55,6 +75,8 @@ protected:
 
 	
 private:
+	//Player Components
+	USphereComponent* PlySphereComponent;
 	
 	//Jump Variables
 	void OnJumpStart();
@@ -92,7 +114,13 @@ private:
 	void StopRun();
 	bool InputReceived();
 
+	UFUNCTION()
+	void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
+	                    int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
 	void MoveRight(float Axisvalue);
 
 	void Interact();
+
+	FVector MantleLocation;
 };
