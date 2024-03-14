@@ -106,6 +106,8 @@ private:
 	
 	//Run Variables
 	float BaseWalkSpeed;
+
+	UPROPERTY(EditAnywhere, Category = "Run")
 	bool bisRunning;
 	float Multi;
 	float SlideTime;
