@@ -37,6 +37,7 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Interactable")
 	bool GetIsInFalling() { return isInFalling; }
+	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	

@@ -9,16 +9,15 @@
 // Sets default values
 ACollectableObject::ACollectableObject()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
 }
 
 void ACollectableObject::Collect_Implementation()
 {
-	if(bIsPrimary)
+	if (bIsPrimary)
 	{
-		AInLevelGameMode* GameMode = Cast< AInLevelGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
+		AInLevelGameMode* GameMode = Cast<AInLevelGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
 		GameMode->SetPrimaryObjectObtained(true);
 	}
 	this->Destroy();
@@ -26,7 +25,6 @@ void ACollectableObject::Collect_Implementation()
 
 int ACollectableObject::GetPoints_Implementation()
 {
-	
 	return PointsEarned;
 }
 
