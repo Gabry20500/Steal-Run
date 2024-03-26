@@ -9,3 +9,13 @@ AInLevelGameMode::AInLevelGameMode()
 {
 	DefaultPawnClass = APlayerCharacter::StaticClass();
 }
+<<<<<<< HEAD
+=======
+
+
+//Protected function
+void AInLevelGameMode::Tick(float DeltaSeconds)
+{
+	Super::Tick(DeltaSeconds);
+}
+>>>>>>> Feature-PlayerMovement

@@ -16,4 +16,18 @@ class STEALANDRUN_API AInLevelGameMode : public AGameModeBase
 
 public:
 	AInLevelGameMode();
+<<<<<<< HEAD
+=======
+
+	UFUNCTION(BlueprintCallable, Category = "GamePhase")
+	void SetPrimaryObjectObtained(bool bGetted) { bPrimaryObjectObtained = bGetted; }
+
+	UFUNCTION(BlueprintCallable, Category = "GamePhase")
+	bool GetPrimaryObjectObtained() const { return bPrimaryObjectObtained; }
+
+protected:
+	bool bPrimaryObjectObtained = false;
+
+	void Tick(float DeltaSeconds) override;
+>>>>>>> Feature-PlayerMovement
 };
