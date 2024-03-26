@@ -12,17 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6d0f64fc-5f0b-443a-ad61-773d9a582631" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/AS_Browser_Animation.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/AS_Browser_Animation.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/EnemyBP_Animation.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/EnemyBP_Animation.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/PlayerBP_Animation.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/PlayerBP_Animation.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/PlayerBP_StateMachine.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/PlayerBP_StateMachine.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/CollectableObject/BP_CollectableObject.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/CollectableObject/BP_CollectableObject.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/UI/WB_UIPlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/UI/WB_UIPlayer.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/CollectableObject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/CollectableObject.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/PlayerCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Public/PlayerCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,6 +256,7 @@
       <workItem from="1710953825327" duration="3034000" />
       <workItem from="1710957208700" duration="707000" />
       <workItem from="1711010988127" duration="3609000" />
+      <workItem from="1711102214213" duration="1190000" />
     </task>
     <servers />
   </component>
