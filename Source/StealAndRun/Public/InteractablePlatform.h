@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "IInteractable.h"
+#include "./Interface/IInteractable.h"
 #include "PlayerCharacter.h"
 #include "InteractablePlatform.generated.h"
 

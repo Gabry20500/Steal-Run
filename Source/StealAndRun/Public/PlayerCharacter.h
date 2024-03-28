@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "CollectableObject.h"
-#include "IInteractable.h"
+#include "./Interface/IInteractable.h"
 #include "GameFramework/Character.h"
 #include "Components/BoxComponent.h"
 #include "Components/SphereComponent.h"
@@ -18,6 +18,7 @@ enum class EPlayerDirection : uint8
 	Left,
 	Right
 };
+
 
 // PlayerCharacter class declaration
 UCLASS()

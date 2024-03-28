@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "ICollectable.h"
+#include "./Interface/ICollectable.h"
 #include "CollectableObject.generated.h"
 
 UCLASS()

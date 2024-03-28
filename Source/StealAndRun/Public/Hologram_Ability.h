@@ -4,17 +4,17 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "./Interface/IInteractable.h"
-#include "InteractableWindow.generated.h"
+#include "./Interface/IAbility.h"
+#include "Hologram_Ability.generated.h"
 
 UCLASS()
-class STEALANDRUN_API AInteractableWindow : public AActor, public IIInteractable
+class STEALANDRUN_API AHologram_Ability : public AActor, public IIAbility
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	AInteractableWindow();
+	AHologram_Ability();
 
 protected:
 	// Called when the game starts or when spawned
@@ -24,5 +24,8 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	void Interact_Implementation() override;
+	void Use_Implementation() override;
+
+	void Stop_Implementation() override;
+
 };
