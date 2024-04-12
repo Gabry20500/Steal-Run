@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "CollectableObject.h"
 #include "IInteractable.h"
+#include "AbilitiesManager.h"
 #include "GameFramework/Character.h"
 #include "Components/BoxComponent.h"
 #include "Components/SphereComponent.h"
@@ -28,7 +29,7 @@ class STEALANDRUN_API APlayerCharacter : public ACharacter
 public:
 	// Sets default values for this character's properties
 	APlayerCharacter();
-
+	
 	// Override the SetupPlayerInputComponent method
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	
@@ -38,7 +39,9 @@ public:
 	
 	UPROPERTY(BlueprintReadWrite, Category = "Collectable")
 	bool bIsCollectable = false;
-
+	
+	AAbilitiesManager* CurrentAbility;
+	
 	// Score property
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Collectable")
 	int Score = 0;
@@ -58,10 +61,13 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Collectable")
 	void SetbIsCollectable(bool value) { bIsCollectable = value; }
 
+	UFUNCTION(BlueprintCallable, Category = "AbilitiesManager")
+	void SetCurrentAbility(AAbilitiesManager *AbilityManager) { CurrentAbility = AbilityManager; }
+	
 	// Method to get the score as a string
 	UFUNCTION(BlueprintPure, Category = "Collectable")
-	FString GetScoreString(){ return  FString::Printf(TEXT("%d"), Score); }
-
+	int GetScore(){ return  Score; }
+	
 	// Method to get the mantle location
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "Mantle")
 	FVector GetMantleLocation() { return MantleLocation; }
@@ -130,6 +136,9 @@ private:
 	// Method to handle the player's interaction with objects
 	void Interact();
 
+	// Method to handle the player's collection of objects
+	void UseAbility();
+	
 	// Mantle location property
 	FVector MantleLocation;
 };
