@@ -40,7 +40,7 @@ public:
 	UPROPERTY(BlueprintReadWrite, Category = "Collectable")
 	bool bIsCollectable = false;
 	
-	AAbilitiesManager* CurrentAbility;
+	AAbilitiesManager* CurrentAbilitiesManager;
 	
 	// Score property
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Collectable")
@@ -62,7 +62,7 @@ public:
 	void SetbIsCollectable(bool value) { bIsCollectable = value; }
 
 	UFUNCTION(BlueprintCallable, Category = "AbilitiesManager")
-	void SetCurrentAbility(AAbilitiesManager *AbilityManager) { CurrentAbility = AbilityManager; }
+	void SetCurrentAbility(AAbilitiesManager *AbilitiesManager) { CurrentAbilitiesManager = AbilitiesManager; }
 	
 	// Method to get the score as a string
 	UFUNCTION(BlueprintPure, Category = "Collectable")

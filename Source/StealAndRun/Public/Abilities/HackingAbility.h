@@ -16,7 +16,6 @@ public:
 	// Sets default values for this actor's properties
 	AHackingAbility();
 
-	TArray<AActor*> GetAllActorsWithTag(FName Tag);
 
 protected:
 	// Called when the game starts or when spawned
@@ -25,6 +24,8 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	UWorld* CurrentWorld;
 
 	UFUNCTION(BlueprintCallable, Category = "Ability")
 	virtual void UseAbility_Implementation() override;

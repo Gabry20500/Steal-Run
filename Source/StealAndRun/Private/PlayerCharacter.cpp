@@ -167,7 +167,7 @@ void APlayerCharacter::Interact()
 
 void APlayerCharacter::UseAbility()
 {
- CurrentAbility->UseAbility();
+ CurrentAbilitiesManager->UseAbility();
 }
 
 // Method to get the interactable object

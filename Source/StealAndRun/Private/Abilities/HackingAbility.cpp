@@ -2,6 +2,7 @@
 
 
 #include "Abilities/HackingAbility.h"
+#include "Kismet/GameplayStatics.h"
 
 #include "EngineUtils.h"
 
@@ -29,26 +30,38 @@ void AHackingAbility::Tick(float DeltaTime)
 
 void AHackingAbility::UseAbility_Implementation()
 {
-	TArray<AActor*> TagOwners = GetAllActorsWithTag("SCamera");
-for (AActor* TagOwner : TagOwners)
+	
+	TArray<AActor*> TagOwners;
+	UGameplayStatics::GetAllActorsWithTag( CurrentWorld,"SecurityCamera", TagOwners);
+
+	if(TagOwners.Num() == 0)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Hacking %s"), *TagOwner->GetName());
+		UE_LOG(LogTemp, Warning, TEXT("No cameras to hack"));
+		return;
 	}
+	else
+	{
+		for (AActor* TagOwner : TagOwners)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Hacking %s"), *TagOwner->GetName());
+		}
+	}
+	
 }
 
 void AHackingAbility::StopAbility_Implementation()
 {
 }
 
-TArray<AActor*> AHackingAbility::GetAllActorsWithTag(FName Tag)
-{
-	TArray<AActor*> Result;
-	for (TActorIterator<AActor> It(GetWorld()); It; ++It)
-	{
-		if (It->ActorHasTag(Tag))
-		{
-			Result.Add(*It);
-		}
-	}
-	return Result;
-}
+// TArray<AActor*> AHackingAbility::GetAllActorsWithTag(FName Tag)
+// {
+// 	TArray<AActor*> Result;
+// 	for (TActorIterator<AActor> It(GetWorld()); It; ++It)
+// 	{
+// 		if (It->ActorHasTag(Tag))
+// 		{
+// 			Result.Add(*It);
+// 		}
+// 	}
+// 	return Result;
+// }
