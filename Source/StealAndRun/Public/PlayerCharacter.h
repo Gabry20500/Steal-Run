@@ -40,7 +40,7 @@ public:
 	bool bIsCollectable = false;
 
 	// Score property
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Collectable")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Score")
 	int Score = 0;
 	
 	// Mantle property
@@ -85,12 +85,6 @@ private:
 	EPlayerDirection PlayerDirection = EPlayerDirection::None;
 	
 	// Jump properties
-	UPROPERTY(EditAnywhere, Category = "Jump")
-	float JumpZVelocity = 500.0f;
-
-	UPROPERTY(EditAnywhere, Category = "Jump")
-	float MaxJumpDuration = .5f;
-
 	bool bIsJumping = false;
 	float JumpStartTime = 0.0f;
 	
