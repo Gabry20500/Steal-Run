@@ -159,9 +159,6 @@ void APlayerCharacter::Interact()
   // If the player is collectable, increase the score by the points of the ObjCollectable
   Score += IICollectable::Execute_GetPoints(ObjCollectable);
   
-  // Log the current score
-  UE_LOG(LogTemp, Warning, TEXT("%d"), Score);
-  
   // Execute the Collect method of the ObjCollectable
   IICollectable::Execute_Collect(ObjCollectable);
  }
