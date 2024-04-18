@@ -4,10 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "IHackerable.h"
 #include "SecurityCamera.generated.h"
 
 UCLASS()
-class STEALANDRUN_API ASecurityCamera : public APawn
+class STEALANDRUN_API ASecurityCamera : public APawn, public IIHackerable
 {
 	GENERATED_BODY()
 
@@ -29,6 +30,6 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	virtual void DeactiveCamera();
+	virtual void Disable_Implementation() override;
 
 };
