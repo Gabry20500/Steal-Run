@@ -80,6 +80,7 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
  InputComponent->BindAction("Run", IE_Pressed, this, &APlayerCharacter::StartRun);
  InputComponent->BindAction("Run", IE_Released, this, &APlayerCharacter::StopRun);
  InputComponent->BindAction("Interact", IE_Pressed, this, &APlayerCharacter::Interact);
+ InputComponent->BindAction("UseAbility", IE_Pressed, this, &APlayerCharacter::UseAbility);
 }
 
 // Method to open a door
@@ -165,6 +166,11 @@ void APlayerCharacter::Interact()
   // Execute the Collect method of the ObjCollectable
   IICollectable::Execute_Collect(ObjCollectable);
  }
+}
+
+void APlayerCharacter::UseAbility()
+{
+ CurrentAbilitiesManager->UseAbility();
 }
 
 // Method to get the interactable object
