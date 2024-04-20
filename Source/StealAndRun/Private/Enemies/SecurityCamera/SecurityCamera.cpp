@@ -32,8 +32,9 @@ void ASecurityCamera::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 
 }
 
-void ASecurityCamera::DeactiveCamera()
+void ASecurityCamera::Disable_Implementation()
 {
 	bIsActive = false;
+	UE_LOG(LogTemp, Warning, TEXT("Disabled %s"), *GetName());
 }
 

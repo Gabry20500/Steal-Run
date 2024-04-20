@@ -5,6 +5,7 @@
 #include "Kismet/GameplayStatics.h"
 
 #include "EngineUtils.h"
+#include "IHackerable.h"
 
 // Sets default values
 AHackingAbility::AHackingAbility()
@@ -32,17 +33,22 @@ void AHackingAbility::UseAbility_Implementation()
 {
 	
 	TArray<AActor*> TagOwners;
-	UGameplayStatics::GetAllActorsWithTag( CurrentWorld,"SecurityCamera", TagOwners);
+	UGameplayStatics::GetAllActorsWithTag( CurrentWorld,"Hackable", TagOwners);
 
 	if(TagOwners.Num() == 0)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("No cameras to hack"));
+		UE_LOG(LogTemp, Warning, TEXT("No object to hack"));
 		return;
 	}
 	else
 	{
 		for (AActor* TagOwner : TagOwners)
 		{
+			IIHackerable* Hackerable = Cast<IIHackerable>(TagOwner);
+			if(Hackerable)
+			{
+				Hackerable->Disable();
+			}
 			UE_LOG(LogTemp, Warning, TEXT("Hacking %s"), *TagOwner->GetName());
 		}
 	}
@@ -52,16 +58,3 @@ void AHackingAbility::UseAbility_Implementation()
 void AHackingAbility::StopAbility_Implementation()
 {
 }
-
-// TArray<AActor*> AHackingAbility::GetAllActorsWithTag(FName Tag)
-// {
-// 	TArray<AActor*> Result;
-// 	for (TActorIterator<AActor> It(GetWorld()); It; ++It)
-// 	{
-// 		if (It->ActorHasTag(Tag))
-// 		{
-// 			Result.Add(*It);
-// 		}
-// 	}
-// 	return Result;
-// }
