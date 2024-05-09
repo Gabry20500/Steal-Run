@@ -3,8 +3,6 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "CollectableObject.h"
-#include "IInteractable.h"
 #include "AbilitiesManager.h"
 #include "GameFramework/Character.h"
 #include "Components/BoxComponent.h"

@@ -12,20 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6d0f64fc-5f0b-443a-ad61-773d9a582631" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Enemies/BaseAnemy/AI_Controller.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Enemies/BaseAnemy/Animations/ABP_BaseEnemy.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Enemies/BaseAnemy/Animations/AIBlendSpace1D.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Enemies/BaseAnemy/BBD_BaseEnemy.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Enemies/BaseAnemy/BP_BaseEnemy.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Enemies/BaseAnemy/BT_BaseEnemy.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Enemies/SecurityCamera/BP_SecurityCamera.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Enemies/Tasks/BTTask_ChasePlayer.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Enemies/Tasks/BTTask_GoBack.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Enemies/Tasks/BTTask_RoamForeward.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/CryptoTower.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/CryptoTower.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Player/BP_PlayerCharacter.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Player/JumpCurve.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/PlayerCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Public/PlayerCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,6 +265,7 @@
       <workItem from="1711010988127" duration="3609000" />
       <workItem from="1713857131082" duration="1469000" />
       <workItem from="1713941004102" duration="1667000" />
+      <workItem from="1715244805708" duration="1760000" />
     </task>
     <servers />
   </component>

@@ -5,6 +5,8 @@
 #include "PaperFlipbookComponent.h"
 #include "Components/BoxComponent.h"
 #include "Components/CapsuleComponent.h"
+#include "IInteractable.h"
+#include "ICollectable.h"
 
 // Constructor for the PlayerCharacter class
 APlayerCharacter::APlayerCharacter()
