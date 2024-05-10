@@ -168,6 +168,9 @@ void APlayerCharacter::Interact()
   // Execute the Collect method of the ObjCollectable
   IICollectable::Execute_Collect(ObjCollectable);
  }
+ else {
+     UE_LOG(LogTemp, Warning, TEXT("Not interact"));
+ }
 }
 
 void APlayerCharacter::UseAbility()
