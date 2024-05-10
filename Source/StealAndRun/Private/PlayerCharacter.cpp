@@ -172,7 +172,8 @@ void APlayerCharacter::Interact()
 
 void APlayerCharacter::UseAbility()
 {
- CurrentAbilitiesManager->UseAbility();
+ //CurrentAbilitiesManager->UseAbility();
+ UE_LOG(LogTemp, Warning, TEXT("Ability used"));
 }
 
 // Method to get the interactable object
