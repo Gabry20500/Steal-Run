@@ -12,10 +12,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6d0f64fc-5f0b-443a-ad61-773d9a582631" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/Abilities/HackingAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/Abilities/HackingAbility.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/Abilities/HologramAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/Abilities/HologramAbility.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/AbilitiesManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/AbilitiesManager.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/Abilities/HologramAbility.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Public/Abilities/HologramAbility.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/Abilities/HologramAbility.h~" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,6 +276,7 @@
       <workItem from="1715695192806" duration="982000" />
       <workItem from="1715696206803" duration="512000" />
       <workItem from="1715696768679" duration="171000" />
+      <workItem from="1715697392256" duration="1612000" />
     </task>
     <servers />
   </component>

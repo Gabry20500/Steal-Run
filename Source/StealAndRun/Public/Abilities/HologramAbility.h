@@ -20,7 +20,10 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
+	
+	UWorld* CurrentWorld;
+	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	
@@ -29,6 +32,6 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Ability")
 	virtual void StopAbility_Implementation() override;
-
-
+	
+	void DrawMousePosition();
 };

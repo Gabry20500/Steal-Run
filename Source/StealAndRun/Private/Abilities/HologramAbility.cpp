@@ -3,34 +3,90 @@
 
 #include "Abilities/HologramAbility.h"
 
-// Sets default values
+#include "PlayerCharacter.h"
+#include "Kismet/GameplayStatics.h"
+
+
 AHologramAbility::AHologramAbility()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
 }
 
-// Called when the game starts or when spawned
 void AHologramAbility::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
-// Called every frame
 void AHologramAbility::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 
 void AHologramAbility::UseAbility_Implementation()
 {
-    UE_LOG(LogTemp, Warning, TEXT("Hologram is used."));
+	DrawMousePosition();
+	UE_LOG(LogTemp, Warning, TEXT("Use Hologram Ability"));
 }
 
 void AHologramAbility::StopAbility_Implementation()
 {
-    UE_LOG(LogTemp, Warning, TEXT("Hologram is stopped."));
+	UE_LOG(LogTemp, Warning, TEXT("Stop Hologram Ability"));
 }
+
+void AHologramAbility::DrawMousePosition()
+{
+	
+	APlayerController* PlayerController = UGameplayStatics::GetPlayerController(CurrentWorld, 0);
+	FVector StartLocation, EndLocation;
+	if(PlayerController == nullptr)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("PlayerController is null."));
+		return;
+	}
+	else
+	{
+		StartLocation = PlayerController->GetPawn()->GetActorLocation();
+	}
+
+	float MouseX, MouseY;
+	PlayerController->GetMousePosition(MouseX, MouseY);
+
+	FVector WorldLocation;
+	FVector WorldDirection;
+	PlayerController->DeprojectScreenPositionToWorld(MouseX, MouseY, WorldLocation, WorldDirection);
+
+	FVector NewLocation = FVector(StartLocation.X, WorldLocation.Y, WorldLocation.Z);
+
+	
+	APlayerCharacter *PlayerCharacter = Cast<APlayerCharacter>(PlayerController->GetPawn());
+	//FVector NewRotation = PlayerCharacter->GetDirection();
+	FVector NewRotation = PlayerCharacter->GetActorForwardVector();
+
+	UE_LOG(LogTemp, Warning, TEXT("%s"), *NewRotation.ToString());
+	
+	EndLocation = NewLocation + NewRotation * 1000; // 200 is the distance of the line trace
+	
+	//Create a FHitResult to store the hit result
+	FHitResult HitResult;
+
+	// Create a FCollisionQueryParams to specify additional parameters
+	FCollisionQueryParams CollisionParams;
+	CollisionParams.AddIgnoredActor(this); // Ignore the actor that is doing the line trace
+
+	PlayerController->bShowMouseCursor = true;
+	
+	// Perform the line trace
+	bool bHit = CurrentWorld->LineTraceSingleByChannel(HitResult, StartLocation, EndLocation, ECC_Visibility, CollisionParams);
+
+	if (bHit)
+	{
+		// If the line trace hit something, draw a red line
+		DrawDebugLine(CurrentWorld, StartLocation, EndLocation, FColor::Red, false, 100, 0, 1);
+	}
+	else
+	{
+		// If the line trace did not hit anything, draw a green line
+		DrawDebugLine(CurrentWorld, StartLocation, EndLocation, FColor::Green, false, 100, 0, 1);
+	}
+}
+
