@@ -12,6 +12,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6d0f64fc-5f0b-443a-ad61-773d9a582631" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/Abilities/HologramAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/Abilities/HologramAbility.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/AbilitiesManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/AbilitiesManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/Abilities/HologramAbility.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Public/Abilities/HologramAbility.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/Abilities/HologramAbility.h~" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +26,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Source/StealAndRun/Private/Abilities/HologramAbility.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/StealAndRun/Private/InLevelGameMode.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/StealAndRun/Private/InteractableDoor.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/StealAndRun/Public/Abilities/HologramAbility.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/StealAndRun/Public/InLevelGameMode.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/EpicGames Launcher/UE_5.3/Engine/Source/Runtime/Engine/Private/Components/CharacterMovementComponent.cpp" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -266,6 +272,10 @@
       <workItem from="1715244805708" duration="1760000" />
       <workItem from="1715331427645" duration="1888000" />
       <workItem from="1715334314699" duration="387000" />
+      <workItem from="1715692317074" duration="1644000" />
+      <workItem from="1715695192806" duration="982000" />
+      <workItem from="1715696206803" duration="512000" />
+      <workItem from="1715696768679" duration="171000" />
     </task>
     <servers />
   </component>

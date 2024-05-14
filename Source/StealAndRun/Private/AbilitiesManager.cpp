@@ -3,9 +3,9 @@
 
 
 #include "AbilitiesManager.h"
-
-#include "Abilities/HackingAbility.h"
 #include "Abilities/HologramAbility.h"
+#include "Abilities/HackingAbility.h"
+//#include "Abilities/HologramAbility.h"
 
 // Sets default values
 AAbilitiesManager::AAbilitiesManager()
@@ -40,6 +40,8 @@ void AAbilitiesManager::SetAbility(AbilityEnum AbilityType)
 		
 		case AbilityEnum::Hologram:
 			CurrentAbility = NewObject<AHologramAbility>();
+			AHologramAbility* HologramAbility = Cast<AHologramAbility>(CurrentAbility);
+		
 			UE_LOG(LogTemp, Warning, TEXT("Hologram is initialized. SetAbility"));
 			break;
 		

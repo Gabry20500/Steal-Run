@@ -16,23 +16,21 @@ void AHologramAbility::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	
 }
 
 // Called every frame
 void AHologramAbility::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	
+
 }
 
 void AHologramAbility::UseAbility_Implementation()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Hologram used"));
+    UE_LOG(LogTemp, Warning, TEXT("Hologram is used."));
 }
 
 void AHologramAbility::StopAbility_Implementation()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Hologram stopped"));
+    UE_LOG(LogTemp, Warning, TEXT("Hologram is stopped."));
 }
-
