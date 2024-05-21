@@ -18,7 +18,7 @@ AInteractableDoor::AInteractableDoor()
 void AInteractableDoor::BeginPlay()
 {
 	Super::BeginPlay();
-	PlayerRef = Cast<APlayerCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+	PlayerRef = Cast<APlayerZDCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
 	StaticMeshComponent = GetComponentByClass<UStaticMeshComponent>();
 }
 

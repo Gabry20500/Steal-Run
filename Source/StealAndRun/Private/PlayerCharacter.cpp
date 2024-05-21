@@ -69,6 +69,9 @@ void APlayerCharacter::Tick(float DeltaTime)
  if(!bIsCollectable)
  {
   ObjCollectable = nullptr;
+ }else
+ {
+  UE_LOG(LogTemp, Warning, TEXT("I hate my life"));
  }
 }
 
@@ -175,7 +178,7 @@ void APlayerCharacter::Interact()
 
 void APlayerCharacter::UseAbility()
 {
- //CurrentAbilitiesManager->UseAbility();
+ CurrentAbilitiesManager->UseAbility();
  UE_LOG(LogTemp, Warning, TEXT("Ability used"));
 }
 

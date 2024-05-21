@@ -3,6 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "IAbility.h"
+#include "Abilities/HologramAbility.h"
+#include "Abilities/HackingAbility.h"
 #include "GameFramework/Actor.h"
 #include "AbilitiesManager.generated.h"
 
@@ -37,6 +40,9 @@ public:
 	
 	IIAbility* CurrentAbility;
 
+	AHologramAbility* HologramAbility;
+    AHackingAbility* HackingAbility;
+	
 	UFUNCTION(BlueprintCallable, Category = "Ability")
 	void SetAbility(AbilityEnum AbilityType);
 

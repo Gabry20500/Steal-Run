@@ -24,7 +24,7 @@ void AHologramAbility::Tick(float DeltaTime)
 
 void AHologramAbility::UseAbility_Implementation()
 {
-	DrawMousePosition();
+	//DrawMousePosition();
 	UE_LOG(LogTemp, Warning, TEXT("Use Hologram Ability"));
 }
 
@@ -35,9 +35,10 @@ void AHologramAbility::StopAbility_Implementation()
 
 void AHologramAbility::DrawMousePosition()
 {
-	
 	APlayerController* PlayerController = UGameplayStatics::GetPlayerController(CurrentWorld, 0);
 	FVector StartLocation, EndLocation;
+
+	
 	if(PlayerController == nullptr)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("PlayerController is null."));
@@ -45,6 +46,7 @@ void AHologramAbility::DrawMousePosition()
 	}
 	else
 	{
+		UE_LOG(LogTemp, Warning, TEXT("PlayerController is ok."));
 		StartLocation = PlayerController->GetPawn()->GetActorLocation();
 	}
 
@@ -80,11 +82,13 @@ void AHologramAbility::DrawMousePosition()
 
 	if (bHit)
 	{
+		UE_LOG(LogTemp, Warning, TEXT("Hit something"));
 		// If the line trace hit something, draw a red line
 		DrawDebugLine(CurrentWorld, StartLocation, EndLocation, FColor::Red, false, 100, 0, 1);
 	}
 	else
 	{
+		UE_LOG(LogTemp, Warning, TEXT("Did not hit anything"));
 		// If the line trace did not hit anything, draw a green line
 		DrawDebugLine(CurrentWorld, StartLocation, EndLocation, FColor::Green, false, 100, 0, 1);
 	}

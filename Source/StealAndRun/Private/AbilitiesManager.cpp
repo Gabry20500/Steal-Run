@@ -3,9 +3,7 @@
 
 
 #include "AbilitiesManager.h"
-#include "Abilities/HologramAbility.h"
-#include "Abilities/HackingAbility.h"
-//#include "Abilities/HologramAbility.h"
+
 
 // Sets default values
 AAbilitiesManager::AAbilitiesManager()
@@ -32,24 +30,25 @@ void AAbilitiesManager::Tick(float DeltaTime)
 void AAbilitiesManager::SetAbility(AbilityEnum AbilityType)
 {
 
-	AHologramAbility* HologramAbility;
-	AHackingAbility* HackingAbility;
+	
 	
 	switch (AbilityType)
 	{
-		
-		case AbilityEnum::Hologram:
-			CurrentAbility = NewObject<AHologramAbility>();
-			HologramAbility = Cast<AHologramAbility>(CurrentAbility);
-			HologramAbility->CurrentWorld = GetWorld();
-			UE_LOG(LogTemp, Warning, TEXT("Hologram is initialized. SetAbility"));
-			break;
-
 		case AbilityEnum::None:
 			CurrentAbility = nullptr;
 			UE_LOG(LogTemp, Warning, TEXT("No ability is initialized. SetAbility"));
 			break;
 		
+		case AbilityEnum::Hologram:
+			CurrentAbility = NewObject<AHologramAbility>();
+			if (CurrentAbility != nullptr)
+			{
+				HologramAbility = Cast<AHologramAbility>(CurrentAbility);
+				HologramAbility->CurrentWorld = GetWorld();
+				UE_LOG(LogTemp, Warning, TEXT("Hologram is initialized. SetAbility"));
+			}
+			break;
+	
 		case AbilityEnum::Hacking:
 			CurrentAbility = NewObject<AHackingAbility>();
 			HackingAbility = Cast<AHackingAbility>(CurrentAbility);
