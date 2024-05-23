@@ -21,7 +21,7 @@ void AInteractablePlatform::BeginPlay()
 }
 
 
-void AInteractablePlatform::SetPlayerVelocity(FVector PlayerVel, APlayerCharacter* PlayerRef)
+void AInteractablePlatform::SetPlayerVelocity(FVector PlayerVel, APlayerZDCharacter* PlayerRef)
 {
 	PlayerVelocity = PlayerVel;
 	Player = PlayerRef;
