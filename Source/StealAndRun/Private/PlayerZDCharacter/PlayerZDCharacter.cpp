@@ -182,10 +182,10 @@ void APlayerZDCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAc
 
 			// Get the BoxComponent of the other actor
 
-			if (UBoxComponent* OtherActorBoxComponent = Cast<UBoxComponent>(OtherActor->GetComponentByClass(UBoxComponent::StaticClass())))
+			if (UChildActorComponent* ArriveObject = Cast<UChildActorComponent>(OtherActor->GetComponentByClass(UChildActorComponent::StaticClass())))
 			{
 				// Get the location of the BoxComponent
-				MantleLocation = OtherActorBoxComponent->GetComponentLocation();
+				MantleLocation = ArriveObject->GetComponentLocation();
 
 				// Now BoxComponentLocation is a vector representing the location of the BoxComponent of the other actor
 			}
