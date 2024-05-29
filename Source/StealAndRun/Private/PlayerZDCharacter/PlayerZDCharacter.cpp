@@ -5,10 +5,12 @@
 
 #include "PaperFlipbookComponent.h"
 #include "Components/BoxComponent.h"
-#include "Components/CapsuleComponent.h"
 #include "IInteractable.h"
 #include "ICollectable.h"
+#include "InteractablePlatform.h"
 #include "GameFramework/CharacterMovementComponent.h"
+
+class AInteractablePlatform;
 
 APlayerZDCharacter::APlayerZDCharacter()
 {
@@ -33,6 +35,7 @@ void APlayerZDCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 	InputComponent->BindAction("Run", IE_Released, this, &APlayerZDCharacter::StopRun);
 	InputComponent->BindAction("Interact", IE_Pressed, this, &APlayerZDCharacter::Interact);
 	InputComponent->BindAction("UseAbility", IE_Pressed, this, &APlayerZDCharacter::UseAbility);
+	InputComponent->BindAction("UsePlatform", IE_Pressed, this, &APlayerZDCharacter::MoveDown);
 }
 
 void APlayerZDCharacter::OpenDoor(UBoxComponent* HitBoxComponent)
@@ -98,23 +101,15 @@ void APlayerZDCharacter::Tick(float DeltaTime)
 	{
 		ObjCollectable = nullptr;
 	}
-	else
+	else if(!bUsePlatform)
 	{
+		ObjCollectable = nullptr;
+	}
+	else{
 		UE_LOG(LogTemp, Warning, TEXT("Both bIsInteracting and bIsCollectable are true."));
 	}
 }
 
-void APlayerZDCharacter::GetInteractableObject(AActor* Actor)
-{
-	// Set the ObjInteractable to the provided Actor
-	ObjInteractable = Actor;
-}
-
-void APlayerZDCharacter::GetCollectableObject(AActor* Actor)
-{
-	// Set the ObjCollectable to the provided Actor
-	ObjCollectable = Actor;
-}
 
 void APlayerZDCharacter::StartRun()
 {
@@ -158,7 +153,7 @@ void APlayerZDCharacter::StopRun()
 	}
 }
 
-bool APlayerZDCharacter::InputReceived()
+bool APlayerZDCharacter::InputReceived() const
 {// Get the value of the "MoveRight" axis
 	float RightValue = InputComponent->GetAxisValue("MoveRight");
 
@@ -251,10 +246,28 @@ void APlayerZDCharacter::MoveRight(float Axisvalue)
 	}
 }
 
+void APlayerZDCharacter::MoveDown()
+{
+	if(bIsInteracting)
+	{
+		// If the ObjInteractable implements the IInteractable interface
+		if(ObjInteractable->Implements<UIInteractable>()){
+			UE_LOG(LogTemp, Warning, TEXT("UsePlatform"));
+			// Execute the Interact method of the ObjInteractable
+			IIInteractable::Execute_Interact(ObjInteractable);
+		}
+	}else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Not UsePlatform"));
+	}
+}
+
 void APlayerZDCharacter::Interact()
 {
+	AInteractablePlatform* InteractablePlatform = Cast<AInteractablePlatform>(ObjInteractable);
+
 	// Check if the player is interacting
-	if(bIsInteracting)
+	if(bIsInteracting && ObjInteractable!= InteractablePlatform)
 	{
 		// If the ObjInteractable implements the IInteractable interface
 		if(ObjInteractable->Implements<UIInteractable>())
@@ -272,8 +285,7 @@ void APlayerZDCharacter::Interact()
   
 		// Execute the Collect method of the ObjCollectable
 		IICollectable::Execute_Collect(ObjCollectable);
-	}
-	else {
+	}else {
 		UE_LOG(LogTemp, Warning, TEXT("Not interact"));
 	}
 }

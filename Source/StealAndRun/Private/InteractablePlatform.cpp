@@ -17,14 +17,9 @@ void AInteractablePlatform::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	Player = GetWorld()->GetFirstPlayerController()->GetPawn<APlayerZDCharacter>();
+	UE_LOG(LogTemp, Warning, TEXT("Player: %s"), *Player->GetName());
 	MeshComponent = FindComponentByClass<UStaticMeshComponent>();
-}
-
-
-void AInteractablePlatform::SetPlayerVelocity(FVector PlayerVel, APlayerZDCharacter* PlayerRef)
-{
-	PlayerVelocity = PlayerVel;
-	Player = PlayerRef;
 }
 
 // Called every frame

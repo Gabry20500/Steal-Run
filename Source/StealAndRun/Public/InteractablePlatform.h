@@ -34,7 +34,7 @@ protected:
 	
 	
 public:	
-
+	
 	UFUNCTION(BlueprintCallable, Category = "Interactable")
 	bool GetIsInFalling() { return isInFalling; }
 	
@@ -46,5 +46,5 @@ public:
 	void ResetPlatform();
 
 	UFUNCTION(Blueprintable, BlueprintCallable, Category = "Interactable")
-	void SetPlayerVelocity(FVector PlayerVel, APlayerZDCharacter* PlayerRef);
+	void SetPLayerVelocity(FVector Velocity) { PlayerVelocity = Velocity; }
 };
