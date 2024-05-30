@@ -5,8 +5,10 @@
 #include "CoreMinimal.h"
 #include "PaperZDCharacter.h"
 #include "AbilitiesManager.h"
+#include "Camera/CameraComponent.h"
 #include "Components/BoxComponent.h"
 #include "Components/SphereComponent.h"
+
 #include "PlayerZDCharacter.generated.h"
 
 class USphereComponent;
@@ -54,6 +56,9 @@ public:
 	UPROPERTY(EditAnywhere ,BlueprintReadWrite, Category = "Mantle")
 	bool bIsOverlappingWithMantle;
 	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Run")
+	bool bisRunning;
+	
 	// Method to open a door
 	UFUNCTION(BlueprintCallable)
 	void OpenDoor(UBoxComponent* HitBoxComponent);
@@ -93,6 +98,7 @@ protected:
 private:
 	// Player Components
 	USphereComponent* PlySphereComponent;
+	UPaperZDAnimationComponent* AnimationComponent;
 
 	// Player direction property
 	EnPlayerDirection PlayerDirection = EnPlayerDirection::None;
@@ -115,8 +121,6 @@ private:
 	// Run Variables
 	float BaseWalkSpeed;
 
-	UPROPERTY(EditAnywhere, Category = "Run")
-	bool bisRunning;
 	float Multi;
 	float SlideTime;
 
