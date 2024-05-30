@@ -8,6 +8,7 @@
 #include "IInteractable.h"
 #include "ICollectable.h"
 #include "InteractablePlatform.h"
+#include "PaperZDAnimationComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
 class AInteractablePlatform;
@@ -62,6 +63,8 @@ void APlayerZDCharacter::BeginPlay()
 
 	// Initialize the player's sphere component
 	PlySphereComponent= Cast<USphereComponent>(GetComponentByClass(USphereComponent::StaticClass()));
+	AnimationComponent = Cast<UPaperZDAnimationComponent>(GetComponentByClass(UPaperZDAnimationComponent::StaticClass()));
+	
 	if(PlySphereComponent)
 	{
 		PlySphereComponent->OnComponentBeginOverlap.AddDynamic(this, &APlayerZDCharacter::OnOverlapBegin);
@@ -115,7 +118,7 @@ void APlayerZDCharacter::StartRun()
 {
 	// Set bisRunning to true
 	bisRunning = true;
-
+	
 	// If the character's movement component is not null
 	if(GetCharacterMovement())
 	// Increase the MaxWalkSpeed of the character's movement component by the Multi
