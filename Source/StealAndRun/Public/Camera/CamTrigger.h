@@ -13,8 +13,6 @@ class STEALANDRUN_API ACamTrigger : public AActor
 {
 	GENERATED_BODY()
 
-public:    
-
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -29,16 +27,10 @@ public:
 
 	UPROPERTY(EditAnywhere, Category="Camera")
 	float CamZ;
-	
-	
 
-private:
-	// Function called when something enters the trigger box
-	UFUNCTION()
-	void OnBeginOverlap(class UPrimitiveComponent* OverlappedComp, AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult);
-
-	// Trigger box component
-	UPROPERTY(VisibleAnywhere)
-	UBoxComponent* TriggerBox;
+	UPROPERTY(BlueprintReadWrite, Category="Camera")
 	ACamManager* CamManager;
+
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "Camera")
+	FVector GetCamPos();
 };
