@@ -5,8 +5,10 @@
 #include "CoreMinimal.h"
 #include "PaperZDCharacter.h"
 #include "AbilitiesManager.h"
+#include "Camera/CameraComponent.h"
 #include "Components/BoxComponent.h"
 #include "Components/SphereComponent.h"
+
 #include "PlayerZDCharacter.generated.h"
 
 class USphereComponent;
@@ -37,6 +39,9 @@ public:
 	// Interactable and Collectable properties
 	UPROPERTY(BlueprintReadWrite, Category = "Interactable")
 	bool bIsInteracting = false;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Interactable")
+	bool bUsePlatform = false;
 	
 	UPROPERTY(BlueprintReadWrite, Category = "Collectable")
 	bool bIsCollectable = false;
@@ -51,6 +56,9 @@ public:
 	UPROPERTY(EditAnywhere ,BlueprintReadWrite, Category = "Mantle")
 	bool bIsOverlappingWithMantle;
 	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Run")
+	bool bisRunning;
+	
 	// Method to open a door
 	UFUNCTION(BlueprintCallable)
 	void OpenDoor(UBoxComponent* HitBoxComponent);
@@ -58,6 +66,9 @@ public:
 	// Getters and Setters
 	UFUNCTION(BlueprintCallable, Category = "Interactable")
 	void SetbIsInteracting(bool value) { bIsInteracting = value; }
+
+	UFUNCTION(BlueprintCallable, Category = "Interactable")
+	void SetbUsePlatform(bool value) { bUsePlatform = value; }
 	
 	UFUNCTION(BlueprintCallable, Category = "Collectable")
 	void SetbIsCollectable(bool value) { bIsCollectable = value; }
@@ -87,6 +98,7 @@ protected:
 private:
 	// Player Components
 	USphereComponent* PlySphereComponent;
+	UPaperZDAnimationComponent* AnimationComponent;
 
 	// Player direction property
 	EnPlayerDirection PlayerDirection = EnPlayerDirection::None;
@@ -96,16 +108,19 @@ private:
 
 	// Methods to get the interactable and collectable objects
 	UFUNCTION(BlueprintCallable, Category = "Interactable")
-	void GetInteractableObject(AActor* Actor);
+	void SetInteractableObject(AActor* Actor)
+	{
+		ObjInteractable = Actor;
+
+		UE_LOG(LogTemp, Warning, TEXT("%s"), *ObjInteractable->GetName());
+	}
 
 	UFUNCTION(BlueprintCallable, Category = "Interactable")
-	void GetCollectableObject(AActor* Actor);
+	void SetCollectableObject(AActor* Actor) { ObjCollectable = Actor; }
 	
 	// Run Variables
 	float BaseWalkSpeed;
 
-	UPROPERTY(EditAnywhere, Category = "Run")
-	bool bisRunning;
 	float Multi;
 	float SlideTime;
 
@@ -114,7 +129,7 @@ private:
 	void StopRun();
 
 	// Method to check if the player has received any input
-	bool InputReceived();
+	bool InputReceived() const;
 
 	// Method to handle the event when the player overlaps with another object
 	UFUNCTION()
@@ -124,6 +139,8 @@ private:
 	// Method to move the player to the right
 	void MoveRight(float Axisvalue);
 
+	void MoveDown();
+
 	// Method to handle the player's interaction with objects
 	void Interact();
 
@@ -131,5 +148,6 @@ private:
 	void UseAbility();
 	
 	// Mantle location property
-	FVector MantleLocation;	
+	FVector MantleLocation;
+
 };
