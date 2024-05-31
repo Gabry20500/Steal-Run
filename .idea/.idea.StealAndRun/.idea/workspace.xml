@@ -12,11 +12,13 @@
   <component name="ChangeListManager">
     <list default="true" id="3b09f90c-b21c-4ab7-b27e-90dfd400af8e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/CollectableObject/BP_CollectableObject.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/CollectableObject/BP_CollectableObject.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Door/BP_InterDoor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Door/BP_InterDoor.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Platform/BP_InteractablePlatform.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Platform/BP_InteractablePlatform.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Window/BP_InteractableWindow.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Window/BP_InteractableWindow.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BP_InLevelGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_InLevelGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BP_BaseEnemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BP_BaseEnemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerZDCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerZDCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Trap/BP_LaserTrap.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Trap/BP_LaserTrap.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerZDCharacter/PlayerZDCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerZDCharacter/PlayerZDCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/CollectableObject.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Public/CollectableObject.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,6 +206,7 @@
       <workItem from="1716819554937" duration="740000" />
       <workItem from="1716969998254" duration="8309000" />
       <workItem from="1717053163679" duration="3222000" />
+      <workItem from="1717143028073" duration="2033000" />
     </task>
     <servers />
   </component>

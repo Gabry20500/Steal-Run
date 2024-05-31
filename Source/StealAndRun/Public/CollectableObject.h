@@ -16,7 +16,7 @@ public:
 	ACollectableObject();
 
 	UPROPERTY(EditAnywhere, Category = "Collectable")
-	int PointsEarned;
+	int PointsEarned = 100;
 	
 	UPROPERTY(EditAnywhere, Category = "Collectable")
 	bool bIsPrimary = false;
