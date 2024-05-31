@@ -251,7 +251,7 @@ void APlayerZDCharacter::MoveRight(float Axisvalue)
 
 void APlayerZDCharacter::MoveDown()
 {
-	if(bIsInteracting)
+	if(bIsInteracting && ObjInteractable== Cast<AInteractablePlatform>(ObjInteractable))
 	{
 		// If the ObjInteractable implements the IInteractable interface
 		if(ObjInteractable->Implements<UIInteractable>()){
@@ -270,7 +270,7 @@ void APlayerZDCharacter::Interact()
 	AInteractablePlatform* InteractablePlatform = Cast<AInteractablePlatform>(ObjInteractable);
 
 	// Check if the player is interacting
-	if(bIsInteracting && ObjInteractable!= InteractablePlatform)
+	if(bIsInteracting && ObjInteractable!= Cast<AInteractablePlatform>(ObjInteractable))
 	{
 		// If the ObjInteractable implements the IInteractable interface
 		if(ObjInteractable->Implements<UIInteractable>())
@@ -297,6 +297,9 @@ void APlayerZDCharacter::UseAbility()
 {
 	CurrentAbilitiesManager->UseAbility();
 	UE_LOG(LogTemp, Warning, TEXT("Ability used"));
+
 }
+
+
 
 
