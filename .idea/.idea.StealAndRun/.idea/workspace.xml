@@ -12,8 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3b09f90c-b21c-4ab7-b27e-90dfd400af8e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerZDCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerZDCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/Camera/BP_CameraFollow.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/Camera/BP_CameraFollow.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/Camera/CamTrigger.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/Camera/CamTrigger.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/Camera/CamTrigger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/Camera/CamTrigger.cpp" afterDir="false" />
@@ -204,6 +203,10 @@
       <workItem from="1717053023924" duration="4125000" />
       <workItem from="1717057291775" duration="364000" />
       <workItem from="1717057727686" duration="3679000" />
+      <workItem from="1717150773327" duration="423000" />
+      <workItem from="1717151258968" duration="140000" />
+      <workItem from="1717660601411" duration="2290000" />
+      <workItem from="1717748734757" duration="4160000" />
     </task>
     <servers />
   </component>

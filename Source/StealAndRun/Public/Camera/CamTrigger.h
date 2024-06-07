@@ -13,24 +13,26 @@ class STEALANDRUN_API ACamTrigger : public AActor
 {
 	GENERATED_BODY()
 
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
 public:
 	// Camera target position variables, editable in the Inspector
-	UPROPERTY(EditAnywhere, Category="Camera")
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="Camera")
 	float CamX;
 
-	UPROPERTY(EditAnywhere, Category="Camera")
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="Camera")
 	float CamY;
 
-	UPROPERTY(EditAnywhere, Category="Camera")
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="Camera")
 	float CamZ;
 
-	UPROPERTY(BlueprintReadWrite, Category="Camera")
-	ACamManager* CamManager;
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="Camera")
+	float CamZDeadZone;
 
-	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "Camera")
-	FVector GetCamPos();
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="Camera")
+	float CamYDeadZone;
+
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="Camera")
+	bool TriggerUsed;
+
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="Camera")
+	bool IsInTrigger;
 };
