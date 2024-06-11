@@ -35,7 +35,6 @@ void APlayerZDCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 	InputComponent->BindAction("Run", IE_Pressed, this, &APlayerZDCharacter::StartRun);
 	InputComponent->BindAction("Run", IE_Released, this, &APlayerZDCharacter::StopRun);
 	InputComponent->BindAction("Interact", IE_Pressed, this, &APlayerZDCharacter::Interact);
-	InputComponent->BindAction("UseAbility", IE_Pressed, this, &APlayerZDCharacter::UseAbility);
 	InputComponent->BindAction("UsePlatform", IE_Pressed, this, &APlayerZDCharacter::MoveDown);
 }
 
@@ -120,16 +119,17 @@ void APlayerZDCharacter::StartRun()
 	bisRunning = true;
 	
 	// If the character's movement component is not null
-	if(GetCharacterMovement())
-	// Increase the MaxWalkSpeed of the character's movement component by the Multi
-	GetCharacterMovement()->MaxWalkSpeed *= Multi;
+	if(GetCharacterMovement()){
+		// Increase the MaxWalkSpeed of the character's movement component by the Multi
+			GetCharacterMovement()->MaxWalkSpeed *= Multi;
+	}
 }
 
 void APlayerZDCharacter::StopRun()
 {
 	// Set bisRunning to false
 	bisRunning = false;
- 
+
 	// If the character's movement component is not null
 	if(GetCharacterMovement())
 	{
@@ -145,7 +145,7 @@ void APlayerZDCharacter::StopRun()
 			{
 				// Decrease the new walk speed by the delta speed
 				NewWalkSpeed -= DeltaSpeed;
-    
+
 				// Set the MaxWalkSpeed of the character's movement component to the new walk speed
 				GetCharacterMovement()->MaxWalkSpeed = NewWalkSpeed;
 			}
@@ -251,7 +251,7 @@ void APlayerZDCharacter::MoveRight(float Axisvalue)
 
 void APlayerZDCharacter::MoveDown()
 {
-	if(bIsInteracting)
+	if(bIsInteracting && ObjInteractable== Cast<AInteractablePlatform>(ObjInteractable))
 	{
 		// If the ObjInteractable implements the IInteractable interface
 		if(ObjInteractable->Implements<UIInteractable>()){
@@ -270,7 +270,7 @@ void APlayerZDCharacter::Interact()
 	AInteractablePlatform* InteractablePlatform = Cast<AInteractablePlatform>(ObjInteractable);
 
 	// Check if the player is interacting
-	if(bIsInteracting && ObjInteractable!= InteractablePlatform)
+	if(bIsInteracting && ObjInteractable!= Cast<AInteractablePlatform>(ObjInteractable))
 	{
 		// If the ObjInteractable implements the IInteractable interface
 		if(ObjInteractable->Implements<UIInteractable>())
@@ -297,6 +297,9 @@ void APlayerZDCharacter::UseAbility()
 {
 	CurrentAbilitiesManager->UseAbility();
 	UE_LOG(LogTemp, Warning, TEXT("Ability used"));
+
 }
+
+
 
 
