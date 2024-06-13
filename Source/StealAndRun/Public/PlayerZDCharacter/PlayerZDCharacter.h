@@ -58,6 +58,10 @@ public:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Run")
 	bool bisRunning;
+
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="Player")
+	// Player direction property
+	EnPlayerDirection PlayerDirection = EnPlayerDirection::None;
 	
 	// Method to open a door
 	UFUNCTION(BlueprintCallable)
@@ -99,9 +103,6 @@ private:
 	// Player Components
 	USphereComponent* PlySphereComponent;
 	UPaperZDAnimationComponent* AnimationComponent;
-
-	// Player direction property
-	EnPlayerDirection PlayerDirection = EnPlayerDirection::None;
 	
 	// Interact Variable
 	AActor* ObjCollectable;
