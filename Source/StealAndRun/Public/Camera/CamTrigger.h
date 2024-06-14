@@ -39,12 +39,6 @@ public:
 
 	UPROPERTY(Blueprintable,BlueprintReadWrite, Category="Camera")
 	float OldYDeadZone;
-
-	UPROPERTY(Blueprintable,BlueprintReadWrite, Category="Camera")
-	float OldFixedZ;
-
-	UPROPERTY(Blueprintable,BlueprintReadWrite, Category="Camera")
-	float OldFixedY;
 	
 	UPROPERTY(Blueprintable,BlueprintReadWrite, Category="Camera")
 	bool TriggerUsed;
