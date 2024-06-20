@@ -11,14 +11,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b09f90c-b21c-4ab7-b27e-90dfd400af8e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BlackBoards_And_BehaviorTree/BBD/BBD_BaseEnemy.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BlackBoards_And_BehaviorTree/BBD/BBD_ChasePlayer.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BlackBoards_And_BehaviorTree/BT/BT_BaseEnemy.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BlackBoards_And_BehaviorTree/BT/BT_ChaseAnemy.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP_InLevelGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_InLevelGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/PlayerBP_StateMachine.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/PlayerBP_StateMachine.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/AI_Controller.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/AI_Controller.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BBD_BaseEnemy.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BP_BaseEnemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BP_BaseEnemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BT_BaseEnemy.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_ChasePlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_ChasePlayer.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_RoamForeward.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_RoamForeward.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerZDCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerZDCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Trap/BP_LaserTrap.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Trap/BP_LaserTrap.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Scripts/Enemies/BaseAnemy/BBD_BaseEnemy.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Scripts/Enemies/BaseAnemy/BT_BaseEnemy.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/InteractablePlatform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/InteractablePlatform.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerZDCharacter/PlayerZDCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerZDCharacter/PlayerZDCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/CollectableObject.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Public/CollectableObject.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/PlayerZDCharacter/PlayerZDCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Public/PlayerZDCharacter/PlayerZDCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,18 +41,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://D:/Epic Games/UE_5.3/Engine/Intermediate/Build/Win64/UnrealEditor/Inc/Engine/UHT/BoxComponent.generated.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/StealAndRun/UHT/CamTrigger.gen.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/StealAndRun/Private/Camera/CamTrigger.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/StealAndRun/Public/Camera/CamManager.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/StealAndRun/Public/Camera/CamTrigger.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -202,11 +207,26 @@
       <updated>1716279252212</updated>
       <workItem from="1716279254646" duration="9401000" />
       <workItem from="1716305852402" duration="1194000" />
-      <workItem from="1716449547266" duration="2021000" />
-      <workItem from="1716819554937" duration="740000" />
-      <workItem from="1716969998254" duration="8309000" />
-      <workItem from="1717053163679" duration="3222000" />
-      <workItem from="1717143028073" duration="2033000" />
+      <workItem from="1716449547266" duration="335000" />
+      <workItem from="1716452458453" duration="289000" />
+      <workItem from="1716452978325" duration="1070000" />
+      <workItem from="1716454088022" duration="1523000" />
+      <workItem from="1716455723677" duration="888000" />
+      <workItem from="1716456644550" duration="131000" />
+      <workItem from="1716456808256" duration="4458000" />
+      <workItem from="1717053023924" duration="4125000" />
+      <workItem from="1717057291775" duration="364000" />
+      <workItem from="1717057727686" duration="3679000" />
+      <workItem from="1717150773327" duration="423000" />
+      <workItem from="1717151258968" duration="140000" />
+      <workItem from="1717660601411" duration="2290000" />
+      <workItem from="1717748734757" duration="4160000" />
+      <workItem from="1718090628141" duration="3328000" />
+      <workItem from="1718107635541" duration="9914000" />
+      <workItem from="1718265748008" duration="7339000" />
+      <workItem from="1718283833207" duration="2367000" />
+      <workItem from="1718350524392" duration="1103000" />
+      <workItem from="1718869894076" duration="5527000" />
     </task>
     <servers />
   </component>
