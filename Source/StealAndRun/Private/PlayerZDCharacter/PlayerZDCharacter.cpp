@@ -138,7 +138,7 @@ void APlayerZDCharacter::StartRun()
 	UE_LOG(LogTemp, Warning, TEXT("%s"), *SoundBox->GetName());
 	
 	// If the character's movement component is not null
-	if(GetCharacterMovement()){
+	if(GetCharacterMovement()){	
 		// Increase the MaxWalkSpeed of the character's movement component by the Multi
 			GetCharacterMovement()->MaxWalkSpeed *= Multi;
 	}
