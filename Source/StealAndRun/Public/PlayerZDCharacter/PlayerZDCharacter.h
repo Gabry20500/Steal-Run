@@ -56,12 +56,15 @@ public:
 	int Score = 0;
 	
 	// Mantle property
-	UPROPERTY(EditAnywhere ,BlueprintReadWrite, Category = "Mantle")
+	UPROPERTY(EditAnywhere ,BlueprintReadWrite, Category = "Movement bools")
 	bool bIsOverlappingWithMantle;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Run")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement bools")
 	bool bisRunning;
-
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement bools")
+	bool isCrouched;
+	
 	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="Player")
 	// Player direction property
 	EnPlayerDirection PlayerDirection = EnPlayerDirection::None;

@@ -134,16 +134,13 @@ void APlayerZDCharacter::StartRun()
 	bisRunning = true;
 
 	SoundBox->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
-	UE_LOG(LogTemp, Warning, TEXT("%d"), SoundBox->GetCollisionEnabled());
-	UE_LOG(LogTemp, Warning, TEXT("%s"), *SoundBox->GetName());
 	
 	// If the character's movement component is not null
-	if(GetCharacterMovement()){	
+	if(GetCharacterMovement() && !isCrouched){	
 		// Increase the MaxWalkSpeed of the character's movement component by the Multi
 			GetCharacterMovement()->MaxWalkSpeed *= Multi;
 	}
 
-	//SoundBox->SetCollisionResponseToChannel(ECollisionChannel::ECC_EngineTraceChannel5, ECollisionResponse::ECR_Overlap);
 }
 
 void APlayerZDCharacter::StopRun()
@@ -152,8 +149,7 @@ void APlayerZDCharacter::StopRun()
 	bisRunning = false;
 	
 	SoundBox->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-	//SoundBox->SetCollisionResponseToChannel(ECollisionChannel::ECC_EngineTraceChannel5, ECollisionResponse::ECR_Ignore);
-
+	
 	// If the character's movement component is not null
 	if(GetCharacterMovement())
 	{
