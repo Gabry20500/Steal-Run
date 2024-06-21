@@ -18,7 +18,6 @@ void AInteractablePlatform::BeginPlay()
 	Super::BeginPlay();
 	
 	Player = GetWorld()->GetFirstPlayerController()->GetPawn<APlayerZDCharacter>();
-	UE_LOG(LogTemp, Warning, TEXT("Player: %s"), *Player->GetName());
 	MeshComponent = FindComponentByClass<UStaticMeshComponent>();
 }
 

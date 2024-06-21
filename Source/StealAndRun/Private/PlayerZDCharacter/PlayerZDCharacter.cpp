@@ -20,6 +20,8 @@ APlayerZDCharacter::APlayerZDCharacter()
 	// Set the character's movement properties
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 	GetCharacterMovement()->AirControl = 0.2f;
+	
+	
 
 	// Initialize running properties
 	Multi = 2.0f;
@@ -79,12 +81,25 @@ void APlayerZDCharacter::BeginPlay()
 	{
 		BaseWalkSpeed = GetCharacterMovement()->MaxWalkSpeed;
 	}
+
+	TArray<UActorComponent*> SoundComponents;
+	SoundComponents =  GetComponentsByTag(UActorComponent::StaticClass(), "SoundBox");
+	SoundBox = Cast<UBoxComponent>(SoundComponents[0]);
+	
+	if(SoundBox == nullptr)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("SoundBoxes is null."));
+	}
+	else
+	{
+		SoundBox->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	}
 }
 
 void APlayerZDCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	
 	// Handle running and interaction with objects
 	if(!bisRunning || !InputReceived() && GetCharacterMovement()->IsMovingOnGround() && GetCharacterMovement()->Velocity.SizeSquared() > 0.1f)
 	{
@@ -117,18 +132,27 @@ void APlayerZDCharacter::StartRun()
 {
 	// Set bisRunning to true
 	bisRunning = true;
+
+	SoundBox->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+	UE_LOG(LogTemp, Warning, TEXT("%d"), SoundBox->GetCollisionEnabled());
+	UE_LOG(LogTemp, Warning, TEXT("%s"), *SoundBox->GetName());
 	
 	// If the character's movement component is not null
-	if(GetCharacterMovement()){
+	if(GetCharacterMovement()){	
 		// Increase the MaxWalkSpeed of the character's movement component by the Multi
 			GetCharacterMovement()->MaxWalkSpeed *= Multi;
 	}
+
+	//SoundBox->SetCollisionResponseToChannel(ECollisionChannel::ECC_EngineTraceChannel5, ECollisionResponse::ECR_Overlap);
 }
 
 void APlayerZDCharacter::StopRun()
 {
 	// Set bisRunning to false
 	bisRunning = false;
+	
+	SoundBox->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	//SoundBox->SetCollisionResponseToChannel(ECollisionChannel::ECC_EngineTraceChannel5, ECollisionResponse::ECR_Ignore);
 
 	// If the character's movement component is not null
 	if(GetCharacterMovement())

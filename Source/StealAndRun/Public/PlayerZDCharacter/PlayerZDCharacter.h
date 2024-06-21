@@ -47,6 +47,9 @@ public:
 	bool bIsCollectable = false;
 	
 	AAbilitiesManager* CurrentAbilitiesManager;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Collectable")
+	UBoxComponent* SoundBox;
 	
 	// Score property
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Collectable")

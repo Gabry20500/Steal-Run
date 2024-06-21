@@ -12,15 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3b09f90c-b21c-4ab7-b27e-90dfd400af8e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/SecurityCamera/BP_SecurityCamera.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/SecurityCamera/BP_SecurityCamera.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Computer/BP_InterComputer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Computer/BP_InterComputer.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Window/BP_InteractableWindow.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/InteractableObject/Window/BP_InteractableWindow.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerCharacter.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerZDCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerZDCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/Camera/BP_CameraFollow.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/Camera/BP_CameraFollow.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/CryptoTower.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/CryptoTower2.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/CryptoTower2.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerZDCharacter/PlayerZDCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerZDCharacter/PlayerZDCharacter.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +205,11 @@
       <workItem from="1717748734757" duration="4160000" />
       <workItem from="1718090628141" duration="3328000" />
       <workItem from="1718107635541" duration="9914000" />
-      <workItem from="1718265748008" duration="2619000" />
+      <workItem from="1718265748008" duration="7339000" />
+      <workItem from="1718283833207" duration="2367000" />
+      <workItem from="1718350524392" duration="1103000" />
+      <workItem from="1718869894076" duration="5527000" />
+      <workItem from="1718953395447" duration="875000" />
     </task>
     <servers />
   </component>
