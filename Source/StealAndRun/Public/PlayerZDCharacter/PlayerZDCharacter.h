@@ -146,7 +146,7 @@ private:
 	// Method to move the player to the right
 	void MoveRight(float Axisvalue);
 
-	void MoveDown();
+	void MoveDown(float Axisvalue);
 
 	// Method to handle the player's interaction with objects
 	void Interact();

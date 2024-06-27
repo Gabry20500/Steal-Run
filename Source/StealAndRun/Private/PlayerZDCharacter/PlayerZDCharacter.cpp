@@ -37,7 +37,7 @@ void APlayerZDCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 	InputComponent->BindAction("Run", IE_Pressed, this, &APlayerZDCharacter::StartRun);
 	InputComponent->BindAction("Run", IE_Released, this, &APlayerZDCharacter::StopRun);
 	InputComponent->BindAction("Interact", IE_Pressed, this, &APlayerZDCharacter::Interact);
-	InputComponent->BindAction("UsePlatform", IE_Pressed, this, &APlayerZDCharacter::MoveDown);
+	InputComponent->BindAxis("UsePlatform", this, &APlayerZDCharacter::MoveDown);
 }
 
 void APlayerZDCharacter::OpenDoor(UBoxComponent* HitBoxComponent)
@@ -269,20 +269,23 @@ void APlayerZDCharacter::MoveRight(float Axisvalue)
 	}
 }
 
-void APlayerZDCharacter::MoveDown()
+void APlayerZDCharacter::MoveDown(float Axisvalue)
 {
-	if(bIsInteracting && ObjInteractable== Cast<AInteractablePlatform>(ObjInteractable))
+	if(Axisvalue < 0.0f)
 	{
-		// If the ObjInteractable implements the IInteractable interface
-		if(ObjInteractable->Implements<UIInteractable>()){
-			UE_LOG(LogTemp, Warning, TEXT("UsePlatform"));
-			// Execute the Interact method of the ObjInteractable
-			IIInteractable::Execute_Interact(ObjInteractable);
+		if(bIsInteracting && ObjInteractable== Cast<AInteractablePlatform>(ObjInteractable))
+		{
+			// If the ObjInteractable implements the IInteractable interface
+			if(ObjInteractable->Implements<UIInteractable>()){
+				// Execute the Interact method of the ObjInteractable
+				IIInteractable::Execute_Interact(ObjInteractable);
+			}
+		}else
+		{
+			return;
 		}
-	}else
-	{
-		UE_LOG(LogTemp, Warning, TEXT("Not UsePlatform"));
 	}
+	
 }
 
 void APlayerZDCharacter::Interact()
