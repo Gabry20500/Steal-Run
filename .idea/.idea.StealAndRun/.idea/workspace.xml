@@ -12,10 +12,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3b09f90c-b21c-4ab7-b27e-90dfd400af8e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerZDCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerZDCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerZDCharacter/PlayerZDCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerZDCharacter/PlayerZDCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/PlayerZDCharacter/PlayerZDCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Public/PlayerZDCharacter/PlayerZDCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/MenuAssets/LevelsSelectionTestBack.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/MenuAssets/MainMenuTest.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BP_InLevelGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_InLevelGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/MenuScript/BPW_GameOverScreen.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/MenuScript/BPW_GameOverScreen.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +57,9 @@
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "C:\\Users\\gabri\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\gabri\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\gabri\\AppData\\Local\\Symbols\\src"
+      "C:\\Users\\nicol\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\nicol\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\nicol\\AppData\\Local\\Symbols\\src"
     ]
   }
 }]]></component>
@@ -214,6 +215,7 @@
       <workItem from="1718869894076" duration="5527000" />
       <workItem from="1718953395447" duration="875000" />
       <workItem from="1719473264970" duration="1898000" />
+      <workItem from="1719475719888" duration="815000" />
     </task>
     <servers />
   </component>
