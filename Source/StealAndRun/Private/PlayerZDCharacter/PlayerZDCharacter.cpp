@@ -38,6 +38,7 @@ void APlayerZDCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 	InputComponent->BindAction("Run", IE_Pressed, this, &APlayerZDCharacter::StartRun);
 	InputComponent->BindAction("Run", IE_Released, this, &APlayerZDCharacter::StopRun);
 	InputComponent->BindAction("Interact", IE_Pressed, this, &APlayerZDCharacter::Interact);
+	InputComponent->BindAction("InteractPlatform", IE_Pressed, this, &APlayerZDCharacter::MoveDown);
 	InputComponent->BindAxis("UsePlatform", this, &APlayerZDCharacter::MoveDown);
 }
 
@@ -310,6 +311,21 @@ void APlayerZDCharacter::MoveDown(float Axisvalue)
 		}
 	}
 	
+}
+
+void APlayerZDCharacter::MoveDown()
+{
+	if(bIsInteracting && ObjInteractable== Cast<AInteractablePlatform>(ObjInteractable))
+	{
+		// If the ObjInteractable implements the IInteractable interface
+		if(ObjInteractable->Implements<UIInteractable>()){
+			// Execute the Interact method of the ObjInteractable
+			IIInteractable::Execute_Interact(ObjInteractable);
+		}
+	}else
+	{
+		return;
+	}
 }
 
 void APlayerZDCharacter::Interact()

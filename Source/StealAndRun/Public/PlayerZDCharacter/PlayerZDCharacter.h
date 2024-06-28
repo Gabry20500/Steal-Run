@@ -163,6 +163,7 @@ private:
 	void MoveRight(float Axisvalue);
 
 	void MoveDown(float Axisvalue);
+	void MoveDown();
 
 	// Method to handle the player's interaction with objects
 	void Interact();
