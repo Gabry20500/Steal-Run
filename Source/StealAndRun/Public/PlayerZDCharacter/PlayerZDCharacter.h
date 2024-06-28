@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "PaperZDCharacter.h"
 #include "AbilitiesManager.h"
+#include "./FMomEventManager/FMODEventManager.h"
 #include "Camera/CameraComponent.h"
 #include "Components/BoxComponent.h"
 #include "Components/SphereComponent.h"
@@ -97,6 +98,15 @@ public:
 	// Interactable object property
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Collectable")
 	AActor* ObjInteractable;
+
+	UFUNCTION(BlueprintCallable, Category = "FMOD")
+	void PlayFMODEvent(FString& EvetPath);
+
+	UFUNCTION(BlueprintCallable, Category = "FMOD")
+	void StopFMODEvent();
+
+	UFUNCTION(BlueprintCallable, Category = "FMOD")
+	void SetFmodParameter(FName ParameterName, float Value);
 	
 protected:
 	// Called when the game starts or when spawned
@@ -106,6 +116,12 @@ protected:
 	virtual void Tick(float DeltaTime) override;
 
 private:
+
+	UFMODEventManager* FMODEventManager;
+
+	UPROPERTY(EditAnywhere, Category = "FMOD")
+	FString StartEventName;
+	
 	// Player Components
 	USphereComponent* PlySphereComponent;
 	UPaperZDAnimationComponent* AnimationComponent;
@@ -156,5 +172,7 @@ private:
 	
 	// Mantle location property
 	FVector MantleLocation;
+
+	
 
 };

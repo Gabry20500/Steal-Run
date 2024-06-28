@@ -8,9 +8,9 @@ public class StealAndRun : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "Paper2D", "Paper2D" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "Paper2D", "Paper2D", "FMODStudio" });
 
-		PrivateDependencyModuleNames.AddRange(new string[] { "Paper2D" });
+		PrivateDependencyModuleNames.AddRange(new string[] { "Paper2D", "FMODStudio"});
 
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });

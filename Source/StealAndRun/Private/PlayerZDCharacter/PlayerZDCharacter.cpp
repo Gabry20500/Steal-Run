@@ -21,8 +21,9 @@ APlayerZDCharacter::APlayerZDCharacter()
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 	GetCharacterMovement()->AirControl = 0.2f;
 	
+	FMODEventManager = CreateDefaultSubobject<UFMODEventManager>(TEXT("FMODEventManager"));
+	StartEventName = TEXT("event:/SFX/STINGER/Stinger_Objects.uasset");
 	
-
 	// Initialize running properties
 	Multi = 2.0f;
 	SlideTime = 1.0f;
@@ -55,6 +56,30 @@ void APlayerZDCharacter::OpenDoor(UBoxComponent* HitBoxComponent)
 	{
 		// Log a warning message if the HitBoxComponent is null
 		UE_LOG(LogTemp, Warning, TEXT("Reference a TargetBoxComponent nulla in OpenDoor"));
+	}
+}
+
+void APlayerZDCharacter::PlayFMODEvent(FString& EvetPath)
+{
+	if(FMODEventManager)
+	{
+		FMODEventManager->PlayFmodEvent(this, EvetPath);
+	}
+}
+
+void APlayerZDCharacter::StopFMODEvent()
+{
+	if(FMODEventManager)
+	{
+		FMODEventManager->StopFmodEvent();
+	}
+}
+
+void APlayerZDCharacter::SetFmodParameter(FName ParameterName, float Value)
+{
+	if(FMODEventManager)
+	{
+		FMODEventManager->SetFmodParameter(ParameterName, Value);
 	}
 }
 
@@ -201,11 +226,10 @@ void APlayerZDCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAc
 		{
 			// Set bIsOverlappingWithMantle to true and log a message indicating that the player is overlapping with the OtherActor
 			bIsOverlappingWithMantle = true;
-			UE_LOG(LogTemp, Warning, TEXT("Overlapping with actor: %s"), *OtherActor->GetName());
 
 			// Get the BoxComponent of the other actor
-
-			if (UChildActorComponent* ArriveObject = Cast<UChildActorComponent>(OtherActor->GetComponentByClass(UChildActorComponent::StaticClass())))
+			UChildActorComponent* ArriveObject = Cast<UChildActorComponent>(OtherActor->GetComponentByClass(UChildActorComponent::StaticClass()));
+			if (ArriveObject)
 			{
 				// Get the location of the BoxComponent
 				MantleLocation = ArriveObject->GetComponentLocation();
@@ -305,9 +329,8 @@ void APlayerZDCharacter::Interact()
 	{
 		// If the player is collectable, increase the score by the points of the ObjCollectable
 		Score += IICollectable::Execute_GetPoints(ObjCollectable);
-  
-		// Log the current score
-		UE_LOG(LogTemp, Warning, TEXT("%d"), Score);
+
+		PlayFMODEvent(StartEventName);
   
 		// Execute the Collect method of the ObjCollectable
 		IICollectable::Execute_Collect(ObjCollectable);
