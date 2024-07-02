@@ -156,7 +156,7 @@ void APlayerZDCharacter::StartRun()
 {
 	// Set bisRunning to true
 	bisRunning = true;
-	FootstepInterval = 0.25f;
+	FootstepInterval = 0.45f;
 	SoundBox->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
 	
 	// If the character's movement component is not null

@@ -12,19 +12,12 @@
   <component name="ChangeListManager">
     <list default="true" id="3b09f90c-b21c-4ab7-b27e-90dfd400af8e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP_InLevelGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_InLevelGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BP_BaseEnemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BP_BaseEnemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/SecurityCamera/BP_SecurityCamera.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/SecurityCamera/BP_SecurityCamera.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/MenuScript/BPW_PauseMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/MenuScript/BPW_PauseMenu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerZDCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerZDCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/CryptoTower2.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/CryptoTower2.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/FMomEventManager/FMODEventManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/FMomEventManager/FMODEventManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/InteractableDoor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/InteractableDoor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/AnimSequences/Run_player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/AnimSequences/Run_player.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_ChasePlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_ChasePlayer.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_GoAtHome.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_GoAtHome.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_GoBack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_GoBack.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_RoamForeward.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_RoamForeward.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerZDCharacter/PlayerZDCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerZDCharacter/PlayerZDCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/FMomEventManager/FMODEventManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Public/FMomEventManager/FMODEventManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/InteractableDoor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Public/InteractableDoor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Public/PlayerZDCharacter/PlayerZDCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Public/PlayerZDCharacter/PlayerZDCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +220,8 @@
       <workItem from="1719561386835" duration="181000" />
       <workItem from="1719561592259" duration="3449000" />
       <workItem from="1719824794265" duration="3424000" />
-      <workItem from="1719904330220" duration="1585000" />
+      <workItem from="1719904330220" duration="2662000" />
+      <workItem from="1719929979987" duration="1714000" />
     </task>
     <servers />
   </component>
