@@ -21,13 +21,15 @@ APlayerZDCharacter::APlayerZDCharacter()
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 	GetCharacterMovement()->AirControl = 0.2f;
 	
-	FMODEventManager = CreateDefaultSubobject<UFMODEventManager>(TEXT("FMODEventManager"));
-	StartEventName = TEXT("event:/SFX/STINGER/Stinger_Objects.uasset");
 	
 	// Initialize running properties
 	Multi = 2.0f;
 	SlideTime = 1.0f;
 	bisRunning = false;
+
+	
+	FootstepTimer = 0.0f;
+	FootstepInterval = 0.5f;
 }
 
 void APlayerZDCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -47,9 +49,12 @@ void APlayerZDCharacter::OpenDoor(UBoxComponent* HitBoxComponent)
 	// Check if the HitBoxComponent is not null
 	if (HitBoxComponent)
 	{
+		
 		// Get the location of the HitBoxComponent
 		FVector TargetLocation = HitBoxComponent->GetComponentLocation();
-  
+
+		PlayFMODSound(TEXT("event:/SFX/LEVEL/SFX_Tutorial/SFX_Level_Door"));
+		
 		// Set the player's location to the location of the HitBoxComponent
 		SetActorLocation(TargetLocation);
 	}
@@ -60,27 +65,18 @@ void APlayerZDCharacter::OpenDoor(UBoxComponent* HitBoxComponent)
 	}
 }
 
-void APlayerZDCharacter::PlayFMODEvent(FString& EvetPath)
+void APlayerZDCharacter::PlayFMODSound(const FString& SoundPath)
 {
-	if(FMODEventManager)
+	// Ottieni il riferimento all'evento FMOD
+	UFMODEvent* Event = Cast<UFMODEvent>(UFMODBlueprintStatics::FindEventByName(SoundPath));
+	if (Event)
 	{
-		FMODEventManager->PlayFmodEvent(this, EvetPath);
+		// Riproduci l'evento alla posizione dell'attore
+		UFMODBlueprintStatics::PlayEventAtLocation(GetWorld(), Event, GetActorTransform(), true);
 	}
-}
-
-void APlayerZDCharacter::StopFMODEvent()
-{
-	if(FMODEventManager)
+	else
 	{
-		FMODEventManager->StopFmodEvent();
-	}
-}
-
-void APlayerZDCharacter::SetFmodParameter(FName ParameterName, float Value)
-{
-	if(FMODEventManager)
-	{
-		FMODEventManager->SetFmodParameter(ParameterName, Value);
+		UE_LOG(LogTemp, Warning, TEXT("FMOD Event not found: %s"), *SoundPath);
 	}
 }
 
@@ -135,6 +131,8 @@ void APlayerZDCharacter::Tick(float DeltaTime)
 		}
 	}
 
+	FootstepTimer += DeltaTime;
+
 	// Reset interactable and collectable objects if not interacting or collecting
 	if(!bIsInteracting)
 	{
@@ -158,7 +156,7 @@ void APlayerZDCharacter::StartRun()
 {
 	// Set bisRunning to true
 	bisRunning = true;
-
+	FootstepInterval = 0.25f;
 	SoundBox->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
 	
 	// If the character's movement component is not null
@@ -200,6 +198,7 @@ void APlayerZDCharacter::StopRun()
 			GetCharacterMovement()->MaxWalkSpeed = BaseWalkSpeed;
 		}
 	}
+	FootstepInterval = 0.5f;
 }
 
 bool APlayerZDCharacter::InputReceived() const
@@ -278,6 +277,14 @@ void APlayerZDCharacter::MoveRight(float Axisvalue)
 
 		// Set the player's direction to right
 		PlayerDirection = EnPlayerDirection::Right;
+
+		if(FootstepTimer >= FootstepInterval && GetCharacterMovement()->IsMovingOnGround()
+			&& GetCharacterMovement()->Velocity.SizeSquared() > 0.1f)
+		{
+			// Play the footstep sound
+			PlayFMODSound(TEXT("event:/SFX/CHAR/Player/Player_Footsteps/SFX_Char_PLayer_FS"));
+			FootstepTimer = 0.0f;
+		}
 	}
 	else if (Axisvalue < 0.0f)
 	{
@@ -291,6 +298,13 @@ void APlayerZDCharacter::MoveRight(float Axisvalue)
 
 		// Set the player's direction to left
 		PlayerDirection = EnPlayerDirection::Left;
+
+		if (FootstepTimer >= FootstepInterval&& GetCharacterMovement()->IsMovingOnGround()
+			&& GetCharacterMovement()->Velocity.SizeSquared() > 0.1f)
+		{
+			PlayFMODSound(TEXT("event:/SFX/CHAR/Player/Player_Footsteps/SFX_Char_PLayer_FS"));
+			FootstepTimer = 0.0f; // Resetta il timer
+		}
 	}
 }
 
@@ -346,7 +360,8 @@ void APlayerZDCharacter::Interact()
 		// If the player is collectable, increase the score by the points of the ObjCollectable
 		Score += IICollectable::Execute_GetPoints(ObjCollectable);
 
-		PlayFMODEvent(StartEventName);
+		CollectableCounter ++;
+		PlayFMODSound(TEXT("event:/SFX/STINGER/Stinger_Objects"));
   
 		// Execute the Collect method of the ObjCollectable
 		IICollectable::Execute_Collect(ObjCollectable);

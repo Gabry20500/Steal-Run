@@ -10,13 +10,9 @@ UFMODEventManager::UFMODEventManager()
 	FMODAudioComponet = CreateDefaultSubobject<UFMODAudioComponent>(TEXT("FMODAudioComponent"));
 }
 
-void UFMODEventManager::PlayFmodEvent(UObject* WorldContextObject, const FString& EventPath)
+void UFMODEventManager::PlayFMODSound(const FString& SoundPath)
 {
-	if(FMODAudioComponet)
-	{
-		FMODAudioComponet->SetEvent(UFMODBlueprintStatics::FindEventByName(EventPath));
-		FMODAudioComponet->Play();
-	}
+	
 }
 
 void UFMODEventManager::StopFmodEvent()

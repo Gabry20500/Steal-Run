@@ -19,7 +19,7 @@ public:
 	UFMODEventManager();
 
 	UFUNCTION(BlueprintCallable, Category = "FMOD")
-	void PlayFmodEvent(UObject* WorldContextObject, const FString& EventPath);
+	void PlayFMODSound(const FString& SoundPath);
 
 	UFUNCTION(BlueprintCallable, Category = "FMOD")
 	void StopFmodEvent();

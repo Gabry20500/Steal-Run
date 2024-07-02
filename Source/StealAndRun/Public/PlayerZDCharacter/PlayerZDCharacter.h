@@ -5,7 +5,8 @@
 #include "CoreMinimal.h"
 #include "PaperZDCharacter.h"
 #include "AbilitiesManager.h"
-#include "./FMomEventManager/FMODEventManager.h"
+#include "FMODBlueprintStatics.h"
+#include "FMODEvent.h"
 #include "Camera/CameraComponent.h"
 #include "Components/BoxComponent.h"
 #include "Components/SphereComponent.h"
@@ -36,6 +37,9 @@ public:
 
 // Override the SetupPlayerInputComponent method
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Player")
+	int CollectableCounter;
 	
 	// Interactable and Collectable properties
 	UPROPERTY(BlueprintReadWrite, Category = "Interactable")
@@ -100,13 +104,7 @@ public:
 	AActor* ObjInteractable;
 
 	UFUNCTION(BlueprintCallable, Category = "FMOD")
-	void PlayFMODEvent(FString& EvetPath);
-
-	UFUNCTION(BlueprintCallable, Category = "FMOD")
-	void StopFMODEvent();
-
-	UFUNCTION(BlueprintCallable, Category = "FMOD")
-	void SetFmodParameter(FName ParameterName, float Value);
+	void PlayFMODSound(const FString& SoundPath);
 	
 protected:
 	// Called when the game starts or when spawned
@@ -117,11 +115,6 @@ protected:
 
 private:
 
-	UFMODEventManager* FMODEventManager;
-
-	UPROPERTY(EditAnywhere, Category = "FMOD")
-	FString StartEventName;
-	
 	// Player Components
 	USphereComponent* PlySphereComponent;
 	UPaperZDAnimationComponent* AnimationComponent;
@@ -173,6 +166,13 @@ private:
 	
 	// Mantle location property
 	FVector MantleLocation;
+
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	float FootstepTimer;
+
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	float FootstepInterval;
+	
 
 	
 
