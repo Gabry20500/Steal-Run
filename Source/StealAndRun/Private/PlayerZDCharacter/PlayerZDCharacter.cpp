@@ -282,7 +282,7 @@ void APlayerZDCharacter::MoveRight(float Axisvalue)
 			&& GetCharacterMovement()->Velocity.SizeSquared() > 0.1f)
 		{
 			// Play the footstep sound
-			PlayFMODSound(TEXT("event:/SFX/CHAR/Player/Player_Footsteps/SFX_Char_PLayer_FS"));
+			PlayFMODSound(TEXT("event:/SFX/CHAR/Player/Player_Footsteps/SFX_Char_Player_FS"));
 			FootstepTimer = 0.0f;
 		}
 	}
@@ -302,7 +302,7 @@ void APlayerZDCharacter::MoveRight(float Axisvalue)
 		if (FootstepTimer >= FootstepInterval&& GetCharacterMovement()->IsMovingOnGround()
 			&& GetCharacterMovement()->Velocity.SizeSquared() > 0.1f)
 		{
-			PlayFMODSound(TEXT("event:/SFX/CHAR/Player/Player_Footsteps/SFX_Char_PLayer_FS"));
+			PlayFMODSound(TEXT("event:/SFX/CHAR/Player/Player_Footsteps/SFX_Char_Player_FS"));
 			FootstepTimer = 0.0f; // Resetta il timer
 		}
 	}
