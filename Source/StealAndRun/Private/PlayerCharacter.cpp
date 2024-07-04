@@ -5,6 +5,8 @@
 #include "PaperFlipbookComponent.h"
 #include "Components/BoxComponent.h"
 #include "Components/CapsuleComponent.h"
+#include "IInteractable.h"
+#include "ICollectable.h"
 
 // Constructor for the PlayerCharacter class
 APlayerCharacter::APlayerCharacter()
@@ -67,6 +69,9 @@ void APlayerCharacter::Tick(float DeltaTime)
  if(!bIsCollectable)
  {
   ObjCollectable = nullptr;
+ }else
+ {
+  UE_LOG(LogTemp, Warning, TEXT("I hate my life"));
  }
 }
 
@@ -166,11 +171,15 @@ void APlayerCharacter::Interact()
   // Execute the Collect method of the ObjCollectable
   IICollectable::Execute_Collect(ObjCollectable);
  }
+ else {
+     UE_LOG(LogTemp, Warning, TEXT("Not interact"));
+ }
 }
 
 void APlayerCharacter::UseAbility()
 {
  CurrentAbilitiesManager->UseAbility();
+ UE_LOG(LogTemp, Warning, TEXT("Ability used"));
 }
 
 // Method to get the interactable object

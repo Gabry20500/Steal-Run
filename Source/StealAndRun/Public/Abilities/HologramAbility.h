@@ -11,8 +11,8 @@ UCLASS()
 class STEALANDRUN_API AHologramAbility : public AActor, public IIAbility
 {
 	GENERATED_BODY()
-
-public:
+	
+public:	
 	// Sets default values for this actor's properties
 	AHologramAbility();
 
@@ -21,12 +21,17 @@ protected:
 	virtual void BeginPlay() override;
 
 public:
+	
+	UWorld* CurrentWorld;
+	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
+	
 	UFUNCTION(BlueprintCallable, Category = "Ability")
 	virtual void UseAbility_Implementation() override;
 
 	UFUNCTION(BlueprintCallable, Category = "Ability")
 	virtual void StopAbility_Implementation() override;
+	
+	void DrawMousePosition();
 };

@@ -18,7 +18,7 @@ AInteractableDoor::AInteractableDoor()
 void AInteractableDoor::BeginPlay()
 {
 	Super::BeginPlay();
-	PlayerRef = Cast<APlayerCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+	PlayerRef = Cast<APlayerZDCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
 	StaticMeshComponent = GetComponentByClass<UStaticMeshComponent>();
 }
 
@@ -55,5 +55,20 @@ void AInteractableDoor::Interact_Implementation()
 		}
 	}
 	bIsPlayerNear = false;
+}
+
+void AInteractableDoor::PlayFMODSound(const FString& SoundPath)
+{
+	// Ottieni il riferimento all'evento FMOD
+	UFMODEvent* Event = Cast<UFMODEvent>(UFMODBlueprintStatics::FindEventByName(SoundPath));
+	if (Event)
+	{
+		// Riproduci l'evento alla posizione dell'attore
+		UFMODBlueprintStatics::PlayEventAtLocation(GetWorld(), Event, GetActorTransform(), true);
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("FMOD Event not found: %s"), *SoundPath);
+	}
 }
 

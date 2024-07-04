@@ -5,7 +5,9 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "IInteractable.h"
-#include "PlayerCharacter.h"
+#include "FMODBlueprintStatics.h"
+#include "FMODEvent.h"
+#include "PlayerZDCharacter/PlayerZDCharacter.h"
 #include "InteractableDoor.generated.h"
 
 UCLASS()
@@ -21,7 +23,7 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	APlayerCharacter* PlayerRef;
+	APlayerZDCharacter* PlayerRef;
 
 public:
 	bool bIsPlayerNear = false;
@@ -29,6 +31,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "OutputDoorTag")
 	FName NextDoorTag;
 
+	UStaticMeshComponent* StaticMeshComponent;
 
 	void SetPlayerNear(bool bIsNear) { bIsPlayerNear = bIsNear; }
 
@@ -37,5 +40,7 @@ public:
 
 	void Interact_Implementation() override;
 
-	UStaticMeshComponent* StaticMeshComponent;
+	UFUNCTION(BlueprintCallable, Category = "FMOD")
+	void PlayFMODSound(const FString& SoundPath);
+
 };

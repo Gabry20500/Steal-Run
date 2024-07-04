@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "CollectableObject.h"
 #include "GameFramework/GameModeBase.h"
 #include "InLevelGameMode.generated.h"
 

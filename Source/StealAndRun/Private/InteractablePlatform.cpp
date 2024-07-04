@@ -17,14 +17,8 @@ void AInteractablePlatform::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	Player = GetWorld()->GetFirstPlayerController()->GetPawn<APlayerZDCharacter>();
 	MeshComponent = FindComponentByClass<UStaticMeshComponent>();
-}
-
-
-void AInteractablePlatform::SetPlayerVelocity(FVector PlayerVel, APlayerCharacter* PlayerRef)
-{
-	PlayerVelocity = PlayerVel;
-	Player = PlayerRef;
 }
 
 // Called every frame

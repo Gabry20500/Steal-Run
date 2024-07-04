@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "IInteractable.h"
-#include "PlayerCharacter.h"
+#include "PlayerZDCharacter/PlayerZDCharacter.h"
 #include "InteractablePlatform.generated.h"
 
 UCLASS()
@@ -29,12 +29,12 @@ protected:
 	float TimeToReset = 2.0f;
 
 	FVector PlayerVelocity;
-	APlayerCharacter* Player;
+	APlayerZDCharacter* Player;
 	bool isInFalling;
 	
 	
 public:	
-
+	
 	UFUNCTION(BlueprintCallable, Category = "Interactable")
 	bool GetIsInFalling() { return isInFalling; }
 	
@@ -46,5 +46,5 @@ public:
 	void ResetPlatform();
 
 	UFUNCTION(Blueprintable, BlueprintCallable, Category = "Interactable")
-	void SetPlayerVelocity(FVector PlayerVel, APlayerCharacter* PlayerRef);
+	void SetPLayerVelocity(FVector Velocity) { PlayerVelocity = Velocity; }
 };
