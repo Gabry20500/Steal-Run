@@ -12,12 +12,71 @@
   <component name="ChangeListManager">
     <list default="true" id="3b09f90c-b21c-4ab7-b27e-90dfd400af8e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/AnimSequences/Run_player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/3D/Sprite_Sheets/BluePrints/Animations/AnimSequences/Run_player.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_ChasePlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_ChasePlayer.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_GoAtHome.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_GoAtHome.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_GoBack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_GoBack.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_RoamForeward.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/Tasks/BTTask_RoamForeward.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerZDCharacter/PlayerZDCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/PlayerZDCharacter/PlayerZDCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/1.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/10.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/11.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/12.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/13.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/14.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/15.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/16.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/17.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/18.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/19.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/2.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/20.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/21.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/22.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/23.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/24.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/25.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/26.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/27.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/28.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/29.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/3.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/30.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/31.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/32.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/33.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/34.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/35.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/36.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/37.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/38.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/39.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/4.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/40.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/41.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/42.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/43.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/44.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/45.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/46.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/47.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/48.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/49.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/5.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/50.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/51.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/52.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/53.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/54.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/55.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/56.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/57.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/58.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/59.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/6.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/60.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/61.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/62.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/63.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/7.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/8.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/Spark/9.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Run_/rosso/RedFlipBook.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +117,9 @@
   },
   &quot;keyToStringList&quot;: {
     &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\gabri\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\gabri\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\gabri\\AppData\\Local\\Symbols\\src&quot;
+      &quot;C:\\Users\\nicol\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\nicol\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\nicol\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
 }</component>
@@ -222,6 +281,8 @@
       <workItem from="1719824794265" duration="3424000" />
       <workItem from="1719904330220" duration="2662000" />
       <workItem from="1719929979987" duration="1714000" />
+      <workItem from="1720081313101" duration="1628000" />
+      <workItem from="1720095251536" duration="874000" />
     </task>
     <servers />
   </component>
