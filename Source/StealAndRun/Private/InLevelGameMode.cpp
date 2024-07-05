@@ -15,4 +15,9 @@ AInLevelGameMode::AInLevelGameMode()
 void AInLevelGameMode::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
+
+	if(bPrimaryObjectObtained)
+	{
+		
+	}
 }
