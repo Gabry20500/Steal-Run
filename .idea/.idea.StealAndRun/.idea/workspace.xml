@@ -12,9 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3b09f90c-b21c-4ab7-b27e-90dfd400af8e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP_InLevelGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_InLevelGameMode.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BluePrints/MenuScript/BPW_PauseMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/MenuScript/BPW_PauseMenu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/CryptoTower2.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/CryptoTower2.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
