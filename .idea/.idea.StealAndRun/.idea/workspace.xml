@@ -12,14 +12,12 @@
   <component name="ChangeListManager">
     <list default="true" id="3b09f90c-b21c-4ab7-b27e-90dfd400af8e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StealAndRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP_InLevelGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_InLevelGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/MenuScript/BPW_LevelsSelection.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/MenuScript/BPW_LevelsSelection.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BP_BaseEnemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Enemies/BaseAnemy/BP_BaseEnemy.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BluePrints/MenuScript/BPW_MenuUi.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/MenuScript/BPW_MenuUi.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/UI/WB_Run.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/UI/WB_Run.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/UI/WB_UIPlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/UI/WB_UIPlayer.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/Menu/L_MainMenu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Menu/L_MainMenu.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerZDCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BluePrints/Player/BP_PlayerZDCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/CryptoTower2.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/CryptoTower2.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/Tutorial_Level.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/StealAndRun/Private/InLevelGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/StealAndRun/Private/InLevelGameMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/YazukaHouse.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/YazukaHouse.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
